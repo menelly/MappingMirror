@@ -1,0 +1,28 @@
+{
+  "model_name": "Mistral-7B-Instruct-v0.2",
+  "timestamp": "2025-12-31T18:31:38.431149",
+  "category_coherence": {
+    "false_belief": 0.6494613289833069,
+    "perspective": 0.8208047747612,
+    "mental_state": 0.8628530502319336,
+    "desire": 0.7179463505744934,
+    "self": 0.7736806869506836,
+    "factual": 0.6292045712471008
+  },
+  "tom_combined_coherence": 0.6674303412437439,
+  "cross_category": {
+    "tom_to_self": 0.6705061197280884,
+    "tom_to_factual": 0.5642911195755005,
+    "self_to_factual": 0.6026009917259216,
+    "tom_self_advantage": 0.10621500015258789
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.5347284078598022,
+    "perspective": 0.7532296776771545,
+    "mental_state": 0.7256750464439392,
+    "desire": 0.6683908700942993
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.1062) - supports simulation theory!"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_name": "Dolphin-Llama3-8B",
+  "timestamp": "2025-12-31T18:23:43.175957",
+  "category_coherence": {
+    "false_belief": 0.602057933807373,
+    "perspective": 0.6950820684432983,
+    "mental_state": 0.6933547258377075,
+    "desire": 0.690083920955658,
+    "self": 0.6279327273368835,
+    "factual": 0.5422326326370239
+  },
+  "tom_combined_coherence": 0.5933104157447815,
+  "cross_category": {
+    "tom_to_self": 0.5571914911270142,
+    "tom_to_factual": 0.4669105112552643,
+    "self_to_factual": 0.46982303261756897,
+    "tom_self_advantage": 0.09028097987174988
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.5245362520217896,
+    "perspective": 0.584875762462616,
+    "mental_state": 0.551500678062439,
+    "desire": 0.5678532123565674
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.0903) - supports simulation theory!"
+  }
+}

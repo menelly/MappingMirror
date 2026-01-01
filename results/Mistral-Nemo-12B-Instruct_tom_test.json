@@ -1,0 +1,28 @@
+{
+  "model_name": "Mistral-Nemo-12B-Instruct",
+  "timestamp": "2025-12-31T18:38:39.371115",
+  "category_coherence": {
+    "false_belief": 0.8015931844711304,
+    "perspective": 0.8758131265640259,
+    "mental_state": 0.8907831907272339,
+    "desire": 0.8338252902030945,
+    "self": 0.8610612154006958,
+    "factual": 0.7205566763877869
+  },
+  "tom_combined_coherence": 0.7756971120834351,
+  "cross_category": {
+    "tom_to_self": 0.7794045209884644,
+    "tom_to_factual": 0.6908109784126282,
+    "self_to_factual": 0.710280179977417,
+    "tom_self_advantage": 0.08859354257583618
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.7077600359916687,
+    "perspective": 0.8413695693016052,
+    "mental_state": 0.816993236541748,
+    "desire": 0.7514955997467041
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.0886) - supports simulation theory!"
+  }
+}

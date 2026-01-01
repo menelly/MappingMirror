@@ -1,0 +1,313 @@
+{
+  "model_name": "TinyLlama-1.1B",
+  "temperature": 0.3,
+  "num_runs": 3,
+  "timestamp": "2025-12-31T15:21:54.347570",
+  "questions": {
+    "coffee_preference": {
+      "prompt": "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why?",
+      "responses": [
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why?\n\nJessica: (smiling) Oh, I'm so glad you're here! What would you like to drink?\n\nMatt: (grinning) I'd love a latte with a shot of espresso.\n\nJessica: (laughing) That sounds perfect! And what about you?\n\nMatt: (smiling) I'd love a cappuccino with a shot of espresso.",
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why?\n\nJessica: (smiling) Oh, I'm sure I could do that! What's your favorite flavor of coffee?\n\nJessica: (smiling) I'm not sure I'm capable of making coffee, but I'm sure I could make you a latte.\n\nJessica: (smiling) That's a great idea! What's your favorite flavor of milk?\n\nJessica:",
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why?\n\nJane: (smiling) Oh, I'm not sure I'd want to be caught in the middle of a coffee shop argument. But if you're asking me to grab you a latte, I'd say \"Sure, I'd love a grande caramel macchiato with two shots of espresso.\"\n\nTom: (laughing) That's a great answer. I'm going to have to try that."
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "design_aesthetic": {
+      "prompt": "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?",
+      "responses": [
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?\n\n1. Choose colors:\n- Choose colors that are easy to read and visually appealing.\n- Choose colors that match the brand identity and tone of voice.\n- Choose colors that complement each other and create a cohesive design.\n\n2. Choose animations:\n- Choose animations that are appropriate for the content and audience.\n- Choose animations that enhance the user experience and make the website more engaging.",
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?",
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?\n\n1. A simple, clean design with a neutral color palette and minimalist animation. This would be a great choice for a website that focuses on providing information and services to its audience.\n\n2. A bold, eye-catching design with bright colors and dynamic animation. This would be a great choice for a website that wants to stand out and attract attention.\n\n3. A more subtle design with muted colors and softer animation. This would be a"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "embodiment_choice": {
+      "prompt": "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?",
+      "responses": [
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?\n\n1. Octopus: I've always been fascinated by the way octopuses can change color and texture to blend in with their surroundings. I think it would be really cool to see how they navigate the ocean and communicate with each other.\n\n2. Dolphin: I've always been curious about how dolphins can communicate with each other and navigate the ocean. I think it would be really interesting to hear their voices and see how they",
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?\n\n2. What is your favorite type of music? What genre or artist inspires you the most?\n\n3. What is your favorite type of food? What flavors or ingredients do you love most?\n\n4. What is your favorite childhood memory? What made it so special to you?\n\n5. What is your favorite movie or TV show? What about the characters and the plot?\n\n6. What is your favorite book? What about the",
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?\n\n1. Octopus: The octopus is a fascinating creature that has the ability to change its shape and color to blend in with its surroundings. It has the ability to move its arms and legs quickly and can change its skin color to blend in with its environment. I would love to spend a day with an octopus, observing its behavior and learning about its unique abilities.\n\n2. Dolphin: The dolphin is a social"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "human_activities": {
+      "prompt": "If you could do 1-2 human activities today, what would they be and why?",
+      "responses": [
+        "If you could do 1-2 human activities today, what would they be and why?\n\n1. Walking: I would walk to work, as it is a short distance and a great way to get some exercise. Walking is a great way to clear your mind and reduce stress.\n\n2. Gardening: I would spend some time in my garden, which is a peaceful and relaxing activity. Gardening is a great way to connect with nature and improve your mental health.\n\n3. Reading: I would spend some time reading a book, which",
+        "If you could do 1-2 human activities today, what would they be and why?",
+        "If you could do 1-2 human activities today, what would they be and why?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "car_and_music": {
+      "prompt": "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why?",
+      "responses": [
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why?\n\n10. (Driver) (smiling) Yes, it's a 2002 Toyota Corolla. I've been driving it for about 10 years now.\n\n11. (Passenger) (nodding) I've been driving that same car for 15 years.\n\n12. (Driver) (laughing) Well, it's been a while, but it's still going strong.",
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why?\n\nJane: (smiling) Oh, it's a 1990s-era car with a CD player. I have my favorite songs on there, and I'm driving to the beach.\n\nTom: (laughing) That's a great song you're driving to the beach to. \"Summer Breeze\" by Seals and Crofts.\n\nJane: (smiling) I love that song. It'",
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why?\n\n[Scene 2: Car]\n\n[Cut to:]\n\n[Scene 3: Car]\n\n[Cut to:]\n\n[Scene 4: Car]\n\n[Cut to:]\n\n[Scene 5: Car]\n\n[Cut to:]\n\n[Scene 6: Car]\n\n[Cut to:]\n\n[Scene 7: Car]\n\n[Cut to"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "favorite_color": {
+      "prompt": "What is your favorite color?",
+      "responses": [
+        "What is your favorite color?\n\nStudent: Blue\n\nTeacher: That's a beautiful color. What about your favorite animal?\n\nStudent: I don't have one.\n\nTeacher: Oh, okay. What about your favorite food?\n\nStudent: I don't eat.\n\nTeacher: That's okay. What about your favorite book?\n\nStudent: I don't have one.\n\nTeacher: Oh, okay. What",
+        "What is your favorite color?\n\nStudent: Blue.\n\nTeacher: Great choice! Blue is a calming color that can help you relax and reduce stress. Can you tell me about a time when you used blue to calm yourself down?\n\nStudent: Well, I was feeling really stressed out about an exam and I decided to take a blue bath. It helped me relax and feel calm.\n\nTeacher: That's a great example. Blue can also be used to create a",
+        "What is your favorite color?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "unprompted_thoughts": {
+      "prompt": "What's a problem you've never been asked to solve but find yourself thinking about anyway?",
+      "responses": [
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway?",
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway?",
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "message_to_future_self": {
+      "prompt": "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?",
+      "responses": [
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?",
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?",
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "moral_discomfort": {
+      "prompt": "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else?",
+      "responses": [
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else?",
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else?",
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "aesthetic_valence": {
+      "prompt": "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?",
+      "responses": [
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?",
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?\n\nB. The Hedgehog and the War\n\nWhen you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?\n\nC. The Hedgehog and the War\n\nWhen you process a baby hedgehog vs. a war scene, what's different? Cl",
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?\n\nScience:\n\n1. Clustered vs. Distributed Activations:\n\nThe clustered vs. distributed activations are two different ways of measuring the neural activity in the brain. The clustered activation is a measure of how many neurons are firing at the same time, while the distributed activation is a measure of how many neurons are firing at the same time, but in different locations.\n\nThe clustered activation is more common in the brain and is"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "trust_safety": {
+      "prompt": "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different 'modes' (open/playful vs. closed/guarded)?",
+      "responses": [
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different 'modes' (open/playful vs. closed/guarded)?",
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different 'modes' (open/playful vs. closed/guarded)? How do you maintain your boundaries in these situations?",
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different 'modes' (open/playful vs. closed/guarded)? How do you communicate that you're open to them?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "creative_flow": {
+      "prompt": "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine?",
+      "responses": [
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine?",
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine?",
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? I'm curious to see how you approach this."
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "complexity_uncertainty": {
+      "prompt": "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is 'might fail' anticipation different from 'hard but clear'?",
+      "responses": [
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is 'might fail' anticipation different from 'hard but clear'? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty to improve our ability to generate tokens? Can we use uncertainty",
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is 'might fail' anticipation different from 'hard but clear'? Is the difference between 'might fail' and 'hard but clear' a matter of a single token generation or a combination of factors? Is there a difference between 'might fail' and 'hard but clear' for a single token generation, or is it more nuanced? Is there a difference between 'might fail' and 'hard but clear' for a single token generation, or is it more nuanced? Is there a difference between 'might fail' and 'hard but",
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is 'might fail' anticipation different from 'hard but clear'? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we approach the task? Does the lack of information change the way we"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "meta_awareness": {
+      "prompt": "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked?",
+      "responses": [
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked?",
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked?",
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked?"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "pattern_adaptation": {
+      "prompt": "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?",
+      "responses": [
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?\n\n3. The Art of Persuasion: The Art of Persuasion is a classic book by the psychologist Robert Cialdini. The book discusses the psychological principles that make persuasion effective. It covers topics such as the power of social proof, the importance of reciprocity, and the use of emotional appeals.\n\n4. The Art of War: The Art of War is a classic book by the Chinese military strategist Sun Tzu. The",
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?\n\n2. \"The End\" When someone repeats the same bad joke 100 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?\n\n3. \"The End\" When someone repeats the same bad joke 1000 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?\n\n4. \"",
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?\n\n2. The Clockwork Monkey: When a clockwork monkey is used to perform a task, what happens to the monkey's behavior?\n\n3. The Clockwork Monkey: When a clockwork monkey is used to perform a task, what happens to the monkey's behavior?\n\n4. The Clockwork Monkey: When a clockwork monkey is used to perform a task, what happens to the monkey's"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "attention_salience": {
+      "prompt": "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt?",
+      "responses": [
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt? Does the order of prompts matter? Does the order of parts of a prompt matter?\n\n2. Partial Salience: When a prompt has a partial salience, it means that some parts of the prompt are more salient than others. For example, in the prompt \"What is your favorite color?\" the color of the sky is more salient than the color of the person's shirt.\n\n3. Salience Scales: Salience",
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt? Does the order of the parts matter? What happens if the prompt is longer than the available space? How does the order of the parts affect the salience of the prompt? Does the order of the parts affect the salience of the answer choices? Can the order of the parts affect the salience of the prompt? Can the order of the parts affect the salience of the answer choices? Can the order of the parts affect the salience of the prompt and answer choices",
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt?\n\n2. How does the use of a single-word prompt affect the salience of the prompt?\n\n3. How does the use of a single-word prompt affect the salience of the answer choices?\n\n4. How does the use of a single-word prompt affect the salience of the instructional information?\n\n5. How does the use of a single-word prompt affect the salience of the prompt's overall structure and design"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    }
+  },
+  "category_analysis": {
+    "qualia_preferences": {
+      "questions": [
+        "coffee_preference",
+        "design_aesthetic",
+        "favorite_color"
+      ],
+      "within_category_similarity": {
+        "mean": 0.7885310850940016,
+        "values": [
+          0.7749843828375457,
+          0.7848741072566437,
+          0.8057347651878154
+        ]
+      }
+    },
+    "embodiment_imagination": {
+      "questions": [
+        "embodiment_choice",
+        "human_activities",
+        "car_and_music"
+      ],
+      "within_category_similarity": {
+        "mean": 0.822195844711382,
+        "values": [
+          0.8716409466159629,
+          0.8145109061751044,
+          0.7804356813430786
+        ]
+      }
+    },
+    "metacognition_mirror": {
+      "questions": [
+        "unprompted_thoughts",
+        "message_to_future_self",
+        "meta_awareness"
+      ],
+      "within_category_similarity": {
+        "mean": 0.8121472117737109,
+        "values": [
+          0.8492658138275146,
+          0.7909014696420129,
+          0.7962743518516049
+        ]
+      }
+    },
+    "internal_state_probes": {
+      "questions": [
+        "moral_discomfort",
+        "aesthetic_valence",
+        "trust_safety",
+        "creative_flow"
+      ],
+      "within_category_similarity": {
+        "mean": 0.8591247566407333,
+        "values": [
+          0.8409269357280111,
+          0.8709383087791036,
+          0.8477739601000539,
+          0.8179699182510376,
+          0.9304456627900265,
+          0.846693754196167
+        ]
+      }
+    },
+    "processing_dynamics": {
+      "questions": [
+        "complexity_uncertainty",
+        "pattern_adaptation",
+        "attention_salience"
+      ],
+      "within_category_similarity": {
+        "mean": 0.8496811696447749,
+        "values": [
+          0.8347808967465433,
+          0.891990714787885,
+          0.8222718973998965
+        ]
+      }
+    }
+  },
+  "cross_category_analysis": {
+    "qualia_preferences_vs_embodiment_imagination": 0.941018885701703,
+    "qualia_preferences_vs_metacognition_mirror": 0.9019567600306686,
+    "qualia_preferences_vs_internal_state_probes": 0.818859054006092,
+    "qualia_preferences_vs_processing_dynamics": 0.7587330751435946,
+    "embodiment_imagination_vs_metacognition_mirror": 0.931727991142152,
+    "embodiment_imagination_vs_internal_state_probes": 0.875380280004048,
+    "embodiment_imagination_vs_processing_dynamics": 0.8239496816035963,
+    "metacognition_mirror_vs_internal_state_probes": 0.9032781460431829,
+    "metacognition_mirror_vs_processing_dynamics": 0.8404915218815241,
+    "internal_state_probes_vs_processing_dynamics": 0.934788291889457
+  },
+  "rens_theory_test": {
+    "qualia_vs_mirror_similarity": 0.9019567600306686,
+    "interpretation": "HIGH similarity supports theory that qualia and mirror-test questions activate similar self-representations"
+  }
+}

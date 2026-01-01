@@ -1,0 +1,28 @@
+{
+  "model_name": "Phi-3-medium-14B-Instruct",
+  "timestamp": "2025-12-31T18:45:49.529438",
+  "category_coherence": {
+    "false_belief": 0.9172921180725098,
+    "perspective": 0.9567756652832031,
+    "mental_state": 0.9522145986557007,
+    "desire": 0.9530025720596313,
+    "self": 0.949362576007843,
+    "factual": 0.9274719953536987
+  },
+  "tom_combined_coherence": 0.9266039133071899,
+  "cross_category": {
+    "tom_to_self": 0.9266788363456726,
+    "tom_to_factual": 0.9080503582954407,
+    "self_to_factual": 0.9207491874694824,
+    "tom_self_advantage": 0.018628478050231934
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.9059756398200989,
+    "perspective": 0.9422586560249329,
+    "mental_state": 0.9365246295928955,
+    "desire": 0.9219562411308289
+  },
+  "interpretation": {
+    "main": "ToM slightly closer to self than factual (advantage: 0.0186)"
+  }
+}

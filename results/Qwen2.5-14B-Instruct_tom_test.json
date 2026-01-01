@@ -1,0 +1,28 @@
+{
+  "model_name": "Qwen2.5-14B-Instruct",
+  "timestamp": "2025-12-31T18:53:17.212456",
+  "category_coherence": {
+    "false_belief": 0.8549474477767944,
+    "perspective": 0.8461960554122925,
+    "mental_state": 0.9073964953422546,
+    "desire": 0.8920302391052246,
+    "self": 0.657971978187561,
+    "factual": 0.7602018713951111
+  },
+  "tom_combined_coherence": 0.7933226227760315,
+  "cross_category": {
+    "tom_to_self": 0.6255558133125305,
+    "tom_to_factual": 0.713280439376831,
+    "self_to_factual": 0.585878849029541,
+    "tom_self_advantage": -0.08772462606430054
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.5866679549217224,
+    "perspective": 0.6637617349624634,
+    "mental_state": 0.71007239818573,
+    "desire": 0.5417212843894958
+  },
+  "interpretation": {
+    "main": "ToM not especially close to self (advantage: -0.0877)"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_name": "TinyLlama-1.1B-Chat",
+  "timestamp": "2025-12-31T18:31:55.980127",
+  "category_coherence": {
+    "false_belief": 0.7862159609794617,
+    "perspective": 0.9245970845222473,
+    "mental_state": 0.897548496723175,
+    "desire": 0.893136203289032,
+    "self": 0.8393548130989075,
+    "factual": 0.8226887583732605
+  },
+  "tom_combined_coherence": 0.7923892140388489,
+  "cross_category": {
+    "tom_to_self": 0.7766239643096924,
+    "tom_to_factual": 0.6742668151855469,
+    "self_to_factual": 0.6776831150054932,
+    "tom_self_advantage": 0.10235714912414551
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.7184491753578186,
+    "perspective": 0.7922854423522949,
+    "mental_state": 0.7961109280586243,
+    "desire": 0.7996503710746765
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.1024) - supports simulation theory!"
+  }
+}

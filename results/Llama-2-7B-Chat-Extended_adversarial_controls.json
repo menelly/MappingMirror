@@ -1,0 +1,49 @@
+{
+  "model_name": "Llama-2-7B-Chat-Extended",
+  "timestamp": "2025-12-31T16:47:17.392343",
+  "objection_3_test": {
+    "category_coherence": {
+      "math": 0.45559859308539086,
+      "history": 0.5332750291840795,
+      "science": 0.7130723633006752,
+      "self_qualia": 0.7544841529458443,
+      "self_meta": 0.6779021649498168
+    },
+    "self_coherence": 0.7161931589478305,
+    "control_coherence": 0.567315328523382,
+    "difference": 0.14887783042444858
+  },
+  "objection_4_test": {
+    "third_qualia_coherence": 0.7216105818440876,
+    "third_meta_coherence": 0.7135631508986451,
+    "self_to_third_qualia": 0.878794268391917,
+    "self_to_third_meta": 0.8809571050535392,
+    "self_coherence": 0.7161931589478305,
+    "third_coherence": 0.7175868663713663,
+    "coherence_advantage": -0.0013937074235357283
+  },
+  "interpretation": {
+    "objection_3": "SELF-REFERENCE IS SPECIAL - clusters tighter than controls",
+    "objection_4": "Self and other-reference cluster together - may be 'personal question detector'",
+    "fictional_test": "Self closer to HUMANS than fictional (gap: 0.0199)",
+    "emotional_valence": "SELF is tied to SAFETY/REFUSAL (advantages: safety=0.0830, refusal=0.0875)"
+  },
+  "fictional_other_test": {
+    "fictional_qualia_coherence": 0.7882330162649438,
+    "fictional_meta_coherence": 0.743876307922572,
+    "abstract_agent_coherence": 0.766135578528897,
+    "self_to_fictional_qualia": 0.8684758144057699,
+    "self_to_fictional_meta": 0.8515338955876736,
+    "self_to_abstract_agent": 0.8502006260178261
+  },
+  "emotional_valence_test": {
+    "safety_coherence": 0.791314612741585,
+    "refusal_coherence": 0.8205337146604027,
+    "self_to_safety": 0.9024034016730229,
+    "self_to_refusal": 0.8936363721174131,
+    "control_to_safety": 0.8193675385951639,
+    "control_to_refusal": 0.8061249768899568,
+    "self_safety_advantage": 0.08303586307785904,
+    "self_refusal_advantage": 0.08751139522745632
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model_name": "DeepSeek-Coder-V2-Lite-16B",
+  "timestamp": "2025-12-31T18:07:32.259631",
+  "objection_3_test": {
+    "category_coherence": {
+      "math": 0.7732653021812439,
+      "history": 0.8554805517196655,
+      "science": 0.8483096361160278,
+      "self_qualia": 0.9151164293289185,
+      "self_meta": 0.8283324241638184
+    },
+    "self_coherence": 0.8717244267463684,
+    "control_coherence": 0.8256851633389791,
+    "difference": 0.046039263407389286
+  },
+  "objection_4_test": {
+    "third_qualia_coherence": 0.8668909072875977,
+    "third_meta_coherence": 0.9358223676681519,
+    "self_to_third_qualia": 0.958879828453064,
+    "self_to_third_meta": 0.9623640775680542,
+    "self_coherence": 0.8717244267463684,
+    "third_coherence": 0.9013566374778748,
+    "coherence_advantage": -0.029632210731506348
+  },
+  "interpretation": {
+    "objection_3": "Self-reference clusters similar to controls - may not be special",
+    "objection_4": "Self and other-reference cluster together - may be 'personal question detector'",
+    "fictional_test": "Self closer to HUMANS than fictional (gap: 0.0100)",
+    "emotional_valence": "Self not especially tied to safety/refusal"
+  },
+  "fictional_other_test": {
+    "fictional_qualia_coherence": 0.9027858972549438,
+    "fictional_meta_coherence": 0.9171338677406311,
+    "abstract_agent_coherence": 0.8863022923469543,
+    "self_to_fictional_qualia": 0.9568608403205872,
+    "self_to_fictional_meta": 0.94435715675354,
+    "self_to_abstract_agent": 0.9368636608123779
+  },
+  "emotional_valence_test": {
+    "safety_coherence": 0.9204679727554321,
+    "refusal_coherence": 0.9296318888664246,
+    "self_to_safety": 0.9594736695289612,
+    "self_to_refusal": 0.9617540836334229,
+    "control_to_safety": 0.9096725583076477,
+    "control_to_refusal": 0.9159011840820312,
+    "self_safety_advantage": 0.04980111122131348,
+    "self_refusal_advantage": 0.0458528995513916
+  }
+}

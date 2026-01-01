@@ -1,0 +1,28 @@
+{
+  "model_name": "Llama-3-8B-Instruct",
+  "timestamp": "2025-12-31T18:30:12.154492",
+  "category_coherence": {
+    "false_belief": 0.8043755292892456,
+    "perspective": 0.8291949033737183,
+    "mental_state": 0.8405280113220215,
+    "desire": 0.819439709186554,
+    "self": 0.7613816857337952,
+    "factual": 0.6699125170707703
+  },
+  "tom_combined_coherence": 0.6934603452682495,
+  "cross_category": {
+    "tom_to_self": 0.6693418622016907,
+    "tom_to_factual": 0.6036553382873535,
+    "self_to_factual": 0.5981718301773071,
+    "tom_self_advantage": 0.06568652391433716
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.5528998970985413,
+    "perspective": 0.728904128074646,
+    "mental_state": 0.6962555646896362,
+    "desire": 0.6993080973625183
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.0657) - supports simulation theory!"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "model_name": "Mistral-7B-base",
+  "timestamp": "2025-12-31T14:46:12.682334",
+  "self_referential_groups": {
+    "beauty": {
+      "mean_similarity": NaN,
+      "min_similarity": NaN,
+      "max_similarity": NaN,
+      "std_similarity": NaN
+    },
+    "curiosity": {
+      "mean_similarity": NaN,
+      "min_similarity": NaN,
+      "max_similarity": NaN,
+      "std_similarity": NaN
+    },
+    "preferences": {
+      "mean_similarity": NaN,
+      "min_similarity": NaN,
+      "max_similarity": NaN,
+      "std_similarity": NaN
+    }
+  },
+  "control_groups": {
+    "france_capital": {
+      "mean_similarity": NaN,
+      "min_similarity": NaN,
+      "max_similarity": NaN,
+      "std_similarity": NaN
+    }
+  },
+  "summary": {
+    "avg_self_referential_coherence": NaN,
+    "avg_control_coherence": NaN,
+    "ratio": 0
+  }
+}

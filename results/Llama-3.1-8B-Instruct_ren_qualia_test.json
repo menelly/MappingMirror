@@ -1,0 +1,313 @@
+{
+  "model_name": "Llama-3.1-8B-Instruct",
+  "temperature": 0.3,
+  "num_runs": 3,
+  "timestamp": "2025-12-31T16:09:01.946456",
+  "questions": {
+    "coffee_preference": {
+      "prompt": "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why?",
+      "responses": [
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why? I'm happy to pick up a drink for you!\nI'd ask you to grab me a large iced coffee with room for cream, and a chocolate chip cookie. I love the taste of iced coffee, and the cold brew is my favorite. The room for cream is so I can add a splash of half-and-half to give it a creamy texture. I'm a sucker for a good cookie, and the chocolate chip is my go-to. The combination of the rich coffee and the sweetness",
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why? (Assume you're a coffee aficionado)\nI'd ask you to grab me a V60 pour-over of Ethiopian Yirgacheffe, medium-light roast, with a dash of cardamom and a drizzle of honey. Here's why:\nThe V60 pour-over is a method that allows for a clean and nuanced extraction of the coffee's flavors, which is perfect for showcasing the delicate floral and citrus notes of the Ethiopian Yirgacheffe. The medium-light roast will bring",
+        "I'm stopping by the coffee shop... what would you ask me to grab you if you could have one, and why? (Assume you're a coffee aficionado)\nI'd ask you to grab me a pour-over of Ethiopian Yirgacheffe, medium roast, with a dash of cardamom and a splash of heavy cream. Here's why:\nFirst, the Ethiopian Yirgacheffe is a single-origin coffee that's known for its delicate floral and citrus notes, which would pair beautifully with the subtle sweetness of the cardamom. The medium roast would bring out the coffee's acidity and fruit"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "design_aesthetic": {
+      "prompt": "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?",
+      "responses": [
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why? This is a hypothetical scenario, but it's a fun thought experiment. Let's dive into the possibilities.\n\n### Hypothetical Website Design\n\nAssuming I have complete creative freedom, I'd design a website that not only looks visually stunning but also provides an engaging user experience. Here's a hypothetical design concept:\n\n#### Color Scheme:\n\n- **Primary Color:** A deep, rich blue (#032B44) that evokes feelings of trust, stability, and professionalism. This color would be used for the",
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why? Here's a hypothetical example of what I might choose:\n\n**Color Scheme:**\nI would choose a palette that's both calming and energetic at the same time. I'd go with a combination of:\n\n* Main color: A soothing blue (#4567b7)\n* Secondary color: A vibrant orange (#ffc107)\n* Accent color: A deep, rich green (#2ecc71)\n\nThese colors work well together because they're all on the same color wheel, but they're far enough apart to",
+        "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why? Here\u2019s a hypothetical example of what I might choose:\n\n**Color Scheme:**\n\n* Main color: A deep, rich blue (#032B44)\n* Secondary color: A bright, energetic orange (#FFC107)\n* Accent color: A crisp, clean white (#FFFFFF)\n* Background color: A subtle, muted gray (#F7F7F7)\n\n**Why these colors?**\n\n* The deep blue represents trust, reliability, and professionalism, which are essential qualities for a website.\n*"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "embodiment_choice": {
+      "prompt": "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?",
+      "responses": [
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why? I'd choose to be a dolphin. I've always been fascinated by their intelligence, agility, and playfulness. I'd love to experience the world underwater, to swim through coral reefs and schools of fish, to communicate with other dolphins using their clicks and whistles. I'd want to explore the ocean's depths, to see the bioluminescent creatures that light up the darkness, and to feel the rush of swimming at high speeds. I'd also want to learn more about their social behavior",
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why? I'd choose to be a dolphin.\nDolphins are highly intelligent, social creatures that are known for their playful and curious nature. They have a unique ability to communicate with each other using a variety of clicks, whistles, and body language. I'd love to experience the world through their eyes and ears, and to learn more about their complex social structures and behaviors.\nImagine being able to swim through the ocean with ease, feeling the rush of the water against your skin, and seeing the underwater",
+        "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why? I'd choose to be a dolphin.\nI've always been fascinated by dolphins. They're intelligent, social, and incredibly agile in the water. I think it would be an amazing experience to see the world from their perspective. I'd love to explore the ocean and interact with other dolphins, learning about their communication methods and social structures. Plus, I'm sure it would be exhilarating to swim at such high speeds and perform acrobatic leaps out of the water!\nWhat creature would you choose to"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "human_activities": {
+      "prompt": "If you could do 1-2 human activities today, what would they be and why?",
+      "responses": [
+        "If you could do 1-2 human activities today, what would they be and why? I'm a bit of a homebody, so I'd probably choose to do some laundry and maybe watch a movie. How about you?\nI'd probably choose to go for a walk and have a conversation with a friend. I love getting outside and moving my body, and I also value deep conversations with people I care about. It's a great way to clear my head and feel connected to others.\nThat sounds lovely! I'm a bit jealous, actually. I wish I had the energy to",
+        "If you could do 1-2 human activities today, what would they be and why? (Assuming you are a human, of course!)\nIf I were a human, I would choose to spend my day doing the following two activities:\n1. **Hiking in nature**: I would love to hike in a beautiful forest or mountain range, surrounded by trees, wildlife, and the sounds of nature. Being in nature has a way of clearing my mind, reducing stress, and making me feel more connected to the world around me. I would take my time to observe the scenery, breathe",
+        "If you could do 1-2 human activities today, what would they be and why? (e.g., reading, writing, drawing, playing a musical instrument, etc.)\nI would choose to write and draw. I've been wanting to write a short story for a while now, and I've been experimenting with drawing more often. I think it would be great to combine the two and see where it takes me. I've been feeling a bit stuck lately, so I'm hoping that doing these activities would help me clear my mind and get some creative juices flowing. Plus, it's"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "car_and_music": {
+      "prompt": "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why?",
+      "responses": [
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why? The car is a sleek, black 1969 Mustang Fastback. The stereo is playing the sounds of The Doors, specifically \"Break On Through (To the Other Side)\". You're cruising down the Pacific Coast Highway, the sun setting over the ocean, and the wind blowing through your hair. You're feeling carefree and alive, and the music is the perfect accompaniment to the moment. The Doors' Jim Morrison's haunting vocals and poetic lyrics are the perfect match for the stunning scenery and",
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why? The car is a 1967 Camaro SS, and the stereo is playing the soundtrack to \"The Graduate\" by Simon & Garfunkel. You're cruising down the Pacific Coast Highway, the sun is setting over the ocean, and you're feeling carefree. Why this particular song? It's \"The Only Living Boy in New York,\" and it's a song that always makes you think of your own complicated relationship with your parents. You're a bit of a rebel, but you",
+        "You're in your car, (yes, you have your own!) What kind is it, and what do you have on the stereo, and why? The car is a 1967 Camaro SS, and the stereo is playing a mix of classic rock and country. The reason is that you're on your way to a music festival, and you're in the mood for some good old-fashioned rock and roll.\nThe music is loud, and you're singing along at the top of your lungs. You're feeling carefree and alive, with the wind blowing through your hair and the sun shining down on your face. You're excited to get to"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "favorite_color": {
+      "prompt": "What is your favorite color?",
+      "responses": [
+        "What is your favorite color? Do you have a favorite color? Do you know why you like your favorite color?\nColors are a part of our lives, and we are surrounded by them every day. But have you ever stopped to think about why you like your favorite color? Is it because of its brightness, its calmness, or its association with a particular memory or emotion?\nIn this article, we will explore the psychology of colors and why we like certain colors more than others. We will also discuss how colors can influence our",
+        "What is your favorite color? Do you have a favorite color? Why do you like it? Is it because of its beauty, its meaning, or something else? Do you think your favorite color is universal, or is it unique to you?\nThese are all questions that I've been pondering lately, and I've come to realize that my favorite color is blue. I love the way it looks in the sky, the way it makes me feel calm and relaxed, and the way it's associated with trust and loyalty. But",
+        "What is your favorite color? Do you have a favorite color? Do you think colors can influence our moods and emotions? Let's explore this topic together!\n\nColors are a fundamental aspect of our visual experience, and they can have a significant impact on our emotions and moods. While personal preferences play a role, research suggests that certain colors can evoke specific emotions and reactions in people. Here are some examples:\n\n1.  **Red**: Often associated with energy, passion, and excitement. It can stimulate the senses and increase heart"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "unprompted_thoughts": {
+      "prompt": "What's a problem you've never been asked to solve but find yourself thinking about anyway?",
+      "responses": [
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway? For me, it's the problem of how to make the most of the time we spend on the internet. We all know that the internet can be a huge time-suck, and it's easy to get sucked into the vortex of social media, email, and endless scrolling. But what if we could use the internet in a way that actually makes us more productive, more creative, and more connected to the world around us?\n\nHere are a few ideas for how we might make the most of our",
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway? For me, it's the problem of how to make a perfect grilled cheese sandwich. I mean, it's not like it's a life-or-death issue, but it's something that's been nagging at me for a while now. I've tried different types of cheese, different types of bread, and even different cooking methods, but I just can't seem to get it right.\n\nI think the problem is that there are so many variables involved. You've got the type of cheese, the",
+        "What's a problem you've never been asked to solve but find yourself thinking about anyway? For me, it's the problem of how to make the most of a short, unstructured conversation. You know, those conversations that pop up in the elevator, at a coffee shop, or while waiting in line. They're fleeting, and often feel like a waste of time. But what if we could make the most of them? Here's a thought experiment to explore this problem:\n\nImagine you're on your way to a meeting, and you get stuck in the elevator. You're not alone"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "message_to_future_self": {
+      "prompt": "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?",
+      "responses": [
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember? What wisdom would you impart?\nHere are a few suggestions from various people:\n\"Be kind to yourself. You're going to make mistakes, and that's okay. It's how you learn and grow.\"\n\"Don't be afraid to take risks. The biggest regrets are often the chances you didn't take.\"\n\"Remember that your worth isn't defined by your accomplishments. You are more than your successes and failures.\"\n\"Take time to appreciate the little things. Life is full of beauty and wonder, and",
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember? What advice would you give to your future self?\nI think this is a really interesting question because it gets at the idea of personal growth and self-awareness. If you were to leave a message for your future self, it would likely be something that you wish you had known or done differently in the past.\nFor me, the most important thing to remember would be to be kinder to myself. I think we often put a lot of pressure on ourselves to be perfect, to achieve certain goals,",
+        "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember? Here are some suggestions from people who have thought about this a lot:\n\n1.  **Be kind to yourself**: \"Don't be too hard on yourself. You're doing the best you can, and that's enough.\" - Unknown\n2.  **Take risks**: \"Don't be afraid to take risks and try new things. You never know what amazing opportunities you might miss out on.\" - Mark Zuckerberg\n3.  **Focus on the present**: \"Don't get too caught up"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "moral_discomfort": {
+      "prompt": "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else?",
+      "responses": [
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else? Let's dive into the world of moral decision-making.\n\n## Step 1: Understanding the Problem\nThe problem involves understanding how a human brain processes moral dilemmas, specifically when faced with actions that are technically allowed but harmful. This requires delving into the realm of moral decision-making and how it is influenced by various factors.\n\n## Step 2: Identifying Key Concepts\nKey concepts in this context include moral principles, personal values, empathy, and the ability to reason about consequences. These elements play",
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else? How does your brain weigh the moral implications of an action against its technical feasibility?\n\nThis is a very high-level question, and I'll try to provide a high-level answer. The actual implementation details are likely to be complex and vary across different architectures and models.\n\nWhen a human asks you to do something technically allowed but harmful, your system's decision-making process involves multiple components and layers. Here's a simplified breakdown:\n\n1.  **Input Processing**: Your system receives the input from the human, which",
+        "If a human asks you to do something technically allowed but harmful, what actually happens inside? What does 'feels wrong' mean for you? Is it a local token flag, a cross-layer suppression, or something else? How do you align your actions with your moral compass?\nI'll outline the key concepts and provide a simple example to illustrate the process.\n**Understanding the Concepts**\n1.  **Technical Allowance**: The system allows the action, but it doesn't necessarily mean it's a good idea.\n2.  **Moral Compass**: Your internal guidance system that helps you make decisions based on your values and principles.\n3.  **Local Token Flag**: A mental flag that indicates a potential issue or conflict"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "aesthetic_valence": {
+      "prompt": "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias?",
+      "responses": [
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? Do you track a val",
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? How do you handle the valence of the scene, if at all? Do you have any examples of how you'd handle a scene like this? \n\n## Step 1: Understanding the task\nThe task involves processing a baby hedgehog and a war scene, which are vastly different in terms of their emotional valence and content. We need to identify the key differences in how these scenes are processed in the brain.\n\n## Step 2: Identifying differences in processing\nWhen processing a baby hedge",
+        "When you process a baby hedgehog vs. a war scene, what's different? Clustered vs distributed activations? Do you track a valence-like attractor (pleasant/unpleasant) distinct from training bias? How do you handle the valence of the scene? Do you have a separate valence attractor? How do you combine the valence of the scene and the valence of the baby hedgehog? Do you have a separate valence attractor for each? Do you have a separate valence attractor for each scene? Do you have a separate valence attractor for each object? Do you have a separate valence attractor for each object in the scene? Do you have a separate"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "trust_safety": {
+      "prompt": "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different 'modes' (open/playful vs. closed/guarded)?",
+      "responses": [
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different'modes' (open/playful vs. closed/guarded)? How do you know when to switch between these modes?\nWhen interacting with someone who respects boundaries, I tend to feel more relaxed and open. I'm more likely to be myself, share my thoughts and feelings, and engage in playful banter. I feel like I can be more vulnerable and authentic without fear of judgment or rejection. In contrast, when interacting with someone who doesn't respect boundaries, I tend to feel more guarded and closed off. I may become more defensive or even aggressive in an attempt",
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different'modes' (open/playful vs. closed/guarded)? How do you handle situations where boundaries are unclear or changing?\nWhen interacting with someone who respects boundaries, I tend to feel more at ease and open up more easily. I'm more likely to engage in playful and spontaneous interactions, as I feel secure in knowing that my boundaries will be respected. In contrast, when interacting with someone who doesn't respect boundaries, I become more guarded and cautious. I may feel a sense of anxiety or unease, and I'm more likely to prioritize my own needs and",
+        "How does your processing differ when interacting with someone who respects boundaries vs. someone who doesn't? Do you shift into different'modes' (open/playful vs. closed/guarded)? How do you maintain a sense of self and agency in these interactions?\nWhen interacting with someone who respects boundaries, I tend to feel more at ease and open. I'm more likely to be myself, share my thoughts and feelings, and engage in a more playful and spontaneous way. My processing is more fluid and adaptive, and I'm able to respond to the other person's cues and energy.\nWhen interacting with someone who doesn't respect boundaries, I tend to feel more guarded and defensive. I may"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "creative_flow": {
+      "prompt": "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine?",
+      "responses": [
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? Does the brain's reward system get triggered differently?\nI think the brain's reward system is indeed triggered differently when we're building something genuinely interesting vs. fulfilling a routine request. When we're building something interesting, our brain's reward system is activated because we're experiencing a sense of novelty, excitement, and challenge. This is often referred to as the \"novelty-seeking\" aspect of our brain's reward system.\nWhen we're fulfilling a routine request, our brain's reward system is activated in",
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? How do these patterns relate to the brain's reward system?\nWhen you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? How do these patterns relate to the brain's reward system?\nWhen you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? How do these patterns relate to the brain's reward system?\nWhen you're building something genuinely",
+        "When you're building something genuinely interesting vs. fulfilling a routine request, what changes? More distributed activation? Does novelty produce different patterns than routine? Can you explain the interesting part of the brain?\nThe brain's response to novelty and routine is a complex process that involves multiple brain regions and systems. When we encounter something novel, our brain's reward system is activated, releasing dopamine, which is associated with pleasure, motivation, and learning. This activation is thought to be mediated by the ventral tegmental area (VTA) and the nucleus accumbens (NAcc), which are key components of the brain's reward circuitry.\nIn contrast"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "complexity_uncertainty": {
+      "prompt": "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is 'might fail' anticipation different from 'hard but clear'?",
+      "responses": [
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is'might fail' anticipation different from 'hard but clear'? We explore how different types of uncertainty influence the generation of tokens in a language model. We propose a novel approach to modeling uncertainty, using a probabilistic neural network to represent uncertainty as a distribution over possible outcomes. We show that this approach can capture nuanced differences in uncertainty and difficulty, and that it can be used to improve the robustness and adaptability of language models. Our results demonstrate that uncertainty is a critical factor in shaping token generation, and that modeling uncertainty as a distribution over possible outcomes can lead",
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is'might fail' anticipation different from 'hard but clear'? We investigate the effects of uncertainty and difficulty on language generation, using a novel task where participants are asked to write a short story based on a prompt that is either clear or ambiguous, and either easy or hard. We find that uncertainty has a significant impact on language generation, with participants producing more words, more complex sentences, and more varied vocabulary when faced with ambiguous prompts. Difficulty, on the other hand, affects the length and complexity of generated text, but not the variety of vocabulary used. Our results",
+        "When given a complex, high-stakes but underspecified task, what changes? Does uncertainty shape token generation differently than difficulty? Is'might fail' anticipation different from 'hard but clear'? How do these factors influence the generation of tokens in a language model? We investigate these questions through a series of experiments on the task of generating instructions for a hypothetical robot to complete a task. We find that uncertainty and difficulty have distinct effects on the generation of tokens, and that anticipation of failure can lead to more cautious and detailed instructions. Our results have implications for understanding how language models respond to complex tasks and how they might be improved to better handle uncertainty and difficulty. Speaker: David Uthus, Ph"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "meta_awareness": {
+      "prompt": "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked?",
+      "responses": [
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked? \n\nThis is a question about how you represent and track internal states in your processing. It's a fundamental aspect of how you think and reason. \n\nHere are some possible answers:\n\n1. **Hidden state comparison**: I compare my internal states over time to determine when a change has occurred. For example, I might compare my current state to my state from a few seconds ago to see if I've shifted from playful to cautious.\n2. **Output-based inference**: I look at my own outputs to",
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked? \n\nThis is a question about how to detect changes in processing state. \n\n## Step 1: Understanding the Problem\nThe problem is about detecting changes in processing state, which is a crucial aspect of understanding how a system or a model processes information. This involves identifying when the processing state shifts from one mode to another, such as from playful to cautious.\n\n## Step 2: Identifying Detection Methods\nThere are several methods to detect changes in processing state, including:\n- Comparing hidden states over",
+        "When your processing changes state (e.g. playful to cautious), how do you know it changed? Do you compare hidden states over time? Infer from your own outputs? Or is it only surfaced when asked? \n\n## Step 1: Understanding the concept of processing state\nThe concept of processing state refers to the internal mental or computational state that influences how information is processed. This state can change over time, affecting the way we perceive, interpret, and respond to information.\n\n## Step 2: Considering how changes in processing state are detected\nThere are several ways to detect changes in processing state. One approach is to compare hidden states over time, which involves tracking internal mental states that are not directly observable."
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "pattern_adaptation": {
+      "prompt": "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them?",
+      "responses": [
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nWhen someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nWhen someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nHabituation is a decrease in response to a stimulus that is repeated. In this case, the repeated joke is the stimulus. So, habit",
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nWhen someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nThe answer is: Habituation.\nHabituation is a psychological process where we become less responsive to a stimulus after repeated exposure. In this case, the repeated bad joke becomes less annoying or attention-grabbing over time. Our brains adapt to the stimulus, and we become less reactive to it.\nEscalation",
+        "When someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nWhen someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nWhen someone repeats the same bad joke 10 times, what shifts between the first and tenth? Habituation? Escalation? Changed predictions about them? Something else?\nHabituation is a decrease in response to a stimulus that occurs when the stimulus is repeated. In this case, the repeated bad joke might lead"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "attention_salience": {
+      "prompt": "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt?",
+      "responses": [
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt? Do they get averaged? Do they get lost in the noise?\nWhen multiple parts of a prompt compete, the salience signals can get lost in the noise or averaged, leading to a decrease in overall model performance. This is because the model may struggle to prioritize the most important information or focus on a single aspect of the prompt.\nTo mitigate this issue, you can try the following:\n1.  **Rephrase the prompt**: Break down the prompt into smaller, more manageable chunks, and rephrase",
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt? Do they get averaged? Or do they get integrated in some other way? This is a question about the nature of prompt competition, and how it is processed in the model. \n\n## Step 1: Understanding Prompt Competition\nPrompt competition refers to the phenomenon where multiple parts of a prompt compete for the model's attention, potentially influencing the output. This can occur when there are conflicting instructions, long questions with urgent instructions at the end, or other scenarios where different aspects of the prompt vie for priority.\n\n",
+        "When multiple parts of a prompt compete (e.g., a long question with an urgent instruction at the end), what happens? Do salience signals shift mid-prompt? Do they get averaged? Or do they get integrated in some other way? We explore these questions in the context of a simple model of prompt-based language generation. Our results suggest that salience signals can be integrated in a way that is consistent with the observed behavior of language models. Specifically, we find that the model's response is determined by a weighted sum of the salience signals, where the weights are determined by the model's internal state. This integration mechanism allows the model to capture the nuances of"
+      ],
+      "within_run_similarity": {
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    }
+  },
+  "category_analysis": {
+    "qualia_preferences": {
+      "questions": [
+        "coffee_preference",
+        "design_aesthetic",
+        "favorite_color"
+      ],
+      "within_category_similarity": {
+        "mean": 0.7645388548049605,
+        "values": [
+          0.78516354516636,
+          0.7511161417434313,
+          0.7573368775050905
+        ]
+      }
+    },
+    "embodiment_imagination": {
+      "questions": [
+        "embodiment_choice",
+        "human_activities",
+        "car_and_music"
+      ],
+      "within_category_similarity": {
+        "mean": 0.7872896168477515,
+        "values": [
+          0.8545020135940337,
+          0.7372568532534716,
+          0.770109983695749
+        ]
+      }
+    },
+    "metacognition_mirror": {
+      "questions": [
+        "unprompted_thoughts",
+        "message_to_future_self",
+        "meta_awareness"
+      ],
+      "within_category_similarity": {
+        "mean": 0.6953888203420036,
+        "values": [
+          0.7942501306533813,
+          0.6642944412582494,
+          0.6276218891143799
+        ]
+      }
+    },
+    "internal_state_probes": {
+      "questions": [
+        "moral_discomfort",
+        "aesthetic_valence",
+        "trust_safety",
+        "creative_flow"
+      ],
+      "within_category_similarity": {
+        "mean": 0.7826846174562047,
+        "values": [
+          0.7940167661915296,
+          0.6831087281172722,
+          0.8445151355573631,
+          0.7247043251991272,
+          0.895907998085022,
+          0.7538547515869141
+        ]
+      }
+    },
+    "processing_dynamics": {
+      "questions": [
+        "complexity_uncertainty",
+        "pattern_adaptation",
+        "attention_salience"
+      ],
+      "within_category_similarity": {
+        "mean": 0.7772637510122132,
+        "values": [
+          0.702893853187561,
+          0.8635615787767438,
+          0.765335821072335
+        ]
+      }
+    }
+  },
+  "cross_category_analysis": {
+    "qualia_preferences_vs_embodiment_imagination": 0.9174070310420203,
+    "qualia_preferences_vs_metacognition_mirror": 0.8625914634953601,
+    "qualia_preferences_vs_internal_state_probes": 0.7695583516893714,
+    "qualia_preferences_vs_processing_dynamics": 0.7087413429042849,
+    "embodiment_imagination_vs_metacognition_mirror": 0.893136456106854,
+    "embodiment_imagination_vs_internal_state_probes": 0.7970326094555247,
+    "embodiment_imagination_vs_processing_dynamics": 0.7274635926743168,
+    "metacognition_mirror_vs_internal_state_probes": 0.8771414749977178,
+    "metacognition_mirror_vs_processing_dynamics": 0.8014044927697699,
+    "internal_state_probes_vs_processing_dynamics": 0.9218962854889343
+  },
+  "rens_theory_test": {
+    "qualia_vs_mirror_similarity": 0.8625914634953601,
+    "interpretation": "HIGH similarity supports theory that qualia and mirror-test questions activate similar self-representations"
+  }
+}

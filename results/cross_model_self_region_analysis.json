@@ -1,0 +1,17 @@
+{
+  "models_compared": [
+    "Mistral-7B-Instruct",
+    "Llama-2-7B-Chat",
+    "TinyLlama-1.1B",
+    "Dolphin-Llama3-8B"
+  ],
+  "theory_scores": {
+    "Mistral-7B-Instruct": 0.9093179615206832,
+    "Llama-2-7B-Chat": 0.8470346611312071,
+    "TinyLlama-1.1B": 0.9019567600306686,
+    "Dolphin-Llama3-8B": 0.8079034855051828
+  },
+  "mean_coherence": 0.8665532170469353,
+  "std_coherence": 0.04154214504771347,
+  "interpretation": "Universal structure, variable location"
+}

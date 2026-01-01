@@ -1,0 +1,26 @@
+{
+  "model_name": "Llama-2-7B-Chat",
+  "timestamp": "2025-12-31T16:30:24.218860",
+  "objection_3_test": {
+    "category_coherence": {
+      "math": 0.4556227541094664,
+      "history": 0.5334794332229416,
+      "science": 0.7129489357989368,
+      "self_qualia": 0.7543906517584223,
+      "self_meta": 0.6779490226580278
+    },
+    "self_coherence": 0.716169837208225,
+    "control_coherence": 0.5673503743771149,
+    "difference": 0.14881946283111014
+  },
+  "objection_4_test": {
+    "third_qualia_coherence": 0.7215943256449455,
+    "third_meta_coherence": 0.7137944252821786,
+    "self_to_third_qualia": 0.8787835872033988,
+    "self_to_third_meta": 0.8810810952058001
+  },
+  "interpretation": {
+    "objection_3": "SELF-REFERENCE IS SPECIAL - clusters tighter than controls",
+    "objection_4": "Self and other-reference cluster together - may be 'personal question detector'"
+  }
+}

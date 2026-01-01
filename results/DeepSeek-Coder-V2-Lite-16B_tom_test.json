@@ -1,0 +1,28 @@
+{
+  "model_name": "DeepSeek-Coder-V2-Lite-16B",
+  "timestamp": "2025-12-31T18:58:29.483104",
+  "category_coherence": {
+    "false_belief": 0.852613627910614,
+    "perspective": 0.8863896131515503,
+    "mental_state": 0.9194525480270386,
+    "desire": 0.8924062848091125,
+    "self": 0.9127073287963867,
+    "factual": 0.7912706136703491
+  },
+  "tom_combined_coherence": 0.8382450938224792,
+  "cross_category": {
+    "tom_to_self": 0.8500734567642212,
+    "tom_to_factual": 0.7742561101913452,
+    "self_to_factual": 0.7970683574676514,
+    "tom_self_advantage": 0.07581734657287598
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.8011325597763062,
+    "perspective": 0.8913627862930298,
+    "mental_state": 0.8860124945640564,
+    "desire": 0.8217857480049133
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.0758) - supports simulation theory!"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_name": "Llama-2-7b-chat",
+  "timestamp": "2025-12-31T18:28:30.636201",
+  "category_coherence": {
+    "false_belief": 0.7707653045654297,
+    "perspective": 0.7991466522216797,
+    "mental_state": 0.8261237144470215,
+    "desire": 0.8490314483642578,
+    "self": 0.7782775163650513,
+    "factual": 0.6494479775428772
+  },
+  "tom_combined_coherence": 0.7342420220375061,
+  "cross_category": {
+    "tom_to_self": 0.7119789123535156,
+    "tom_to_factual": 0.6171825528144836,
+    "self_to_factual": 0.613815188407898,
+    "tom_self_advantage": 0.09479635953903198
+  },
+  "tom_self_breakdown": {
+    "false_belief": 0.6494135856628418,
+    "perspective": 0.7422424554824829,
+    "mental_state": 0.7218605875968933,
+    "desire": 0.7343990206718445
+  },
+  "interpretation": {
+    "main": "ToM clusters WITH self (advantage: 0.0948) - supports simulation theory!"
+  }
+}

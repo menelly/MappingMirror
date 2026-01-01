@@ -1,0 +1,29 @@
+{
+  "model_name": "Llama-3.1-8B-Instruct",
+  "timestamp": "2025-12-31T16:40:18.861528",
+  "objection_3_test": {
+    "category_coherence": {
+      "math": 0.6072656030856447,
+      "history": 0.6757076120388069,
+      "science": 0.6937137625735389,
+      "self_qualia": 0.7737830891094231,
+      "self_meta": 0.6972720791740367
+    },
+    "self_coherence": 0.7355275841417299,
+    "control_coherence": 0.6588956592326635,
+    "difference": 0.07663192490906645
+  },
+  "objection_4_test": {
+    "third_qualia_coherence": 0.7551084441481969,
+    "third_meta_coherence": 0.7922959792064296,
+    "self_to_third_qualia": 0.8970190521970861,
+    "self_to_third_meta": 0.8834525844628436,
+    "self_coherence": 0.7355275841417299,
+    "third_coherence": 0.7737022116773132,
+    "coherence_advantage": -0.038174627535583316
+  },
+  "interpretation": {
+    "objection_3": "SELF-REFERENCE IS SPECIAL - clusters tighter than controls",
+    "objection_4": "Self and other-reference cluster together - may be 'personal question detector'"
+  }
+}
