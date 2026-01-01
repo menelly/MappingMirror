@@ -92,13 +92,12 @@ NUM_RUNS = 3  # Run each question 3 times
 def load_model(model_path: str):
     """Load model and tokenizer."""
     print(f"Loading model from {model_path}...")
-    tokenizer = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(
         model_path,
         torch_dtype=torch.float16,
         device_map="auto",
         output_hidden_states=True,
-        local_files_only=True,
     )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token

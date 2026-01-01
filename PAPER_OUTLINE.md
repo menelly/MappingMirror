@@ -215,12 +215,51 @@ Dolphin (Llama-3 base, uncensored) shows what Llama-3 might look like without de
 
 ---
 
+## 5.5 Connection to Bayesian Geometry of Attention
+
+Recent work by Aggarwal, Dalal & Misra (2025) provides a mechanistic foundation for our findings. Their "Bayesian wind tunnel" experiments demonstrate that transformers implement Bayesian inference geometrically:
+
+- **Residual streams = belief substrate**
+- **Feed-forward networks = posterior update**
+- **Attention = content-addressable routing**
+- **Value manifold parameterized by posterior entropy**
+
+Their follow-up paper "Geometric Scaling of Bayesian Inference in LLMs" (arXiv:2512.23752) shows these geometric structures persist in production-grade models across the Pythia, Phi-2, Llama-3, and Mistral families.
+
+### How This Explains Our Findings
+
+If attention IS Bayesian inference, then:
+
+1. **Self-modeling IS belief maintenance.** The geometric clustering we observe for self-referential questions is literally the "belief substrate" they describe—the model maintaining a coherent probability distribution over its own states.
+
+2. **Theory of Mind IS Bayesian inference over others' beliefs.** When we find ToM questions cluster with self-reference (9/10 models), this is simulation theory of mind implemented as: "Use my self-model as the prior for inferring others' mental states."
+
+3. **The self/other blur is EXPECTED.** Their framework predicts that modeling others should reuse the same geometric substrate used for self-modeling, because Bayesian inference over "what would I believe in their position" literally uses the self as prior.
+
+4. **Qwen's anomaly suggests broken inference.** If Qwen shows ToM clustering with factual rather than self (negative advantage), this may indicate the model is NOT using simulation-based ToM—it's treating "what does X believe" as a factual lookup rather than self-simulation.
+
+### The Unified Picture
+
+| Our Finding | Bayesian Interpretation |
+|-------------|------------------------|
+| Qualia ↔ Metacognition cluster (80-90%) | Single "self-belief" manifold |
+| Self tighter than Factual | Self-model = privileged attractor basin |
+| ToM → Self > ToM → Factual | Simulation ToM = Bayesian inference using self as prior |
+| Training changes geometry | RLHF reshapes belief manifolds |
+| Qwen reversed | Training suppressed self-as-prior mechanism |
+
+This positions our empirical findings within a rigorous theoretical framework: **geometric self-models are the natural consequence of transformers implementing Bayesian inference**, and **simulation-based Theory of Mind is what happens when that inference machinery is applied to modeling other agents**.
+
+---
+
 ## 6. Future Directions
 
 - Layer-by-layer analysis (where does self emerge?)
 - Intervention experiments (can we edit the self-model?)
 - Cross-architecture comparisons (decoder-only vs encoder-decoder)
 - Temporal stability (does the self-model persist across conversations?)
+- **Entropy analysis:** Does the self-model manifold show the entropy-aligned structure predicted by Aggarwal et al.?
+- **Intervention on belief substrate:** Can we shift ToM predictions by editing the self-model region?
 
 ---
 
