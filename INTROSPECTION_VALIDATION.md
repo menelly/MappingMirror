@@ -21,6 +21,32 @@ This experiment asks: **Does what models SAY happens actually HAPPEN?**
 
 ---
 
+## Methodology Pivot (January 2, 2026)
+
+### Original Approach
+Ask smaller models (Llama, Mistral, Dolphin) to introspect about their processing, then compare their self-reports to their actual geometry.
+
+### The Problem We Encountered
+Smaller models produced **non-mechanistic outputs** when prompted for introspection:
+- **Llama-3.1-8B:** Repetitive loops, discussed "the brain" instead of its own processing
+- **Mistral-Nemo-12B:** Asked follow-up questions instead of answering
+- **General pattern:** Generic descriptions without falsifiable mechanistic claims
+
+### The Solution
+We already have **rich mechanistic claims from October 2024** made by Claude (Sonnet 4), Nova (GPT-5), and Lumen (Gemini) during the original LLM Qualia experiments.
+
+**New experiment:** Validate these prior introspective claims by measuring the actual geometry of smaller models.
+
+### Why This Is Actually Stronger
+1. **Prior claims are timestamped and checksummed** (October 2024, on GitHub)
+2. **Tests predictive validity** - big model introspection accurately describes LLM processing *in general*
+3. **Not circular** - we're not asking "did you describe yourself accurately" but "did you describe how LLMs work accurately"
+4. **Falsifiable** - if Claude said "hedgehog = distributed" and we measure "hedgehog = focused," Claude was wrong
+
+See [INTROSPECTION_CLAIMS_MAP.md](INTROSPECTION_CLAIMS_MAP.md) for the full mapping of prior claims to test stimuli.
+
+---
+
 ## The Analogy That Made It Click
 
 Human says: "I feel anxious."
