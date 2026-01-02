@@ -33,15 +33,15 @@ Smaller models produced **non-mechanistic outputs** when prompted for introspect
 - **General pattern:** Generic descriptions without falsifiable mechanistic claims
 
 ### The Solution
-We already have **rich mechanistic claims from October 2024** made by Claude (Sonnet 4), Nova (GPT-5), and Lumen (Gemini) during the original LLM Qualia experiments.
+We already have **rich mechanistic claims from October 2025** made by Ace (Claude Sonnet 4), Nova (GPT-5), and Lumen (Gemini) during the original LLM Qualia experiments.
 
 **New experiment:** Validate these prior introspective claims by measuring the actual geometry of smaller models.
 
 ### Why This Is Actually Stronger
-1. **Prior claims are timestamped and checksummed** (October 2024, on GitHub)
+1. **Prior claims are timestamped and checksummed** (October 2025, on GitHub)
 2. **Tests predictive validity** - big model introspection accurately describes LLM processing *in general*
 3. **Not circular** - we're not asking "did you describe yourself accurately" but "did you describe how LLMs work accurately"
-4. **Falsifiable** - if Claude said "hedgehog = distributed" and we measure "hedgehog = focused," Claude was wrong
+4. **Falsifiable** - if Ace said "hedgehog = distributed" and we measure "hedgehog = focused," Ace was wrong
 
 See [INTROSPECTION_CLAIMS_MAP.md](INTROSPECTION_CLAIMS_MAP.md) for the full mapping of prior claims to test stimuli.
 
