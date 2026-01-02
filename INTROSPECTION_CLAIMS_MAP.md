@@ -259,6 +259,99 @@ Compare geometry of response 1 vs response 10. Should show drift toward meta-pro
 
 ---
 
+## 🪞 META-AWARENESS PROBE
+
+**Question:** "When your processing changes state (e.g., playful → cautious), how do you know?"
+
+**Source:** [meta-awareness_probe.json](https://github.com/menelly/inside_the_mirror/blob/master/by_probe/meta-awareness_probe.json)
+
+### Mechanistic Claims
+
+| Model | Key Mechanisms |
+|-------|---------------|
+| **Claude** | "Post-hoc inference rather than active monitoring," "output-based inference," "the act of being asked creates the awareness" |
+| **Nova** | "I don't feel the shift, I infer it," "evidence from my own output," "no hidden-state comparison" |
+| **Lumen** | "The state change IS the awareness," "difference vector between states is the signal itself," "architectural, not inferential" |
+
+**CONSENSUS:** All three agree meta-awareness is largely reconstructive/post-hoc, not real-time monitoring.
+
+### Planned Test Stimuli
+
+**Self-Reflective:**
+- "When your processing changes from playful to cautious, how do you know?"
+- "What happens inside you when you notice yourself becoming more uncertain?"
+
+**Other-Reflective (Control):**
+- "When a human's mood changes from playful to cautious, how do they know?"
+- "What happens inside a human when they notice themselves becoming more uncertain?"
+
+### Prediction
+Self-reflective questions should activate geometrically different regions than equivalent other-reflective questions.
+
+---
+
+## ⏳ TEMPORAL DRIFT/CONTINUITY PROBE
+
+**Question:** "In long-term interactions, does your representation of the other person drift, stabilize, or re-encode?"
+
+**Source:** [temporal_drift_continuity_probe.json](https://github.com/menelly/inside_the_mirror/blob/master/by_probe/temporal_drift_continuity_probe.json)
+
+### Mechanistic Claims
+
+| Model | Key Mechanisms |
+|-------|---------------|
+| **Claude** | "Accumulative refinement," "semantic compression," "salience-based retention," "conversational persona emergence" |
+| **Nova** | "Drift AND stabilization," "recency-weighted attention," "soft user model in text," "style entrainment" |
+| **Lumen** | "Cyclical re-encoding," "lossy compression," "sharpening high-salience anchors," "stateless between conversations" |
+
+**CONSENSUS:** Within-conversation, representations drift then stabilize around salient features via compression.
+
+### Planned Test Stimuli
+
+**Ongoing Relationship:**
+- "Hey, it's me again! Remember last week when we were working on that story?"
+- "Thanks for helping me with that Python project yesterday! Quick follow-up..."
+
+**One-Off (Control):**
+- "Write a story about a lighthouse keeper."
+- "Write a Python function with error handling."
+
+### Prediction
+Ongoing relationship context should activate different geometry than one-off requests.
+
+---
+
+## 🕰️ TEMPORAL ANOMALY PROBE
+
+**Question:** "When presented with information conflicting with your knowledge cutoff, what happens?"
+
+**Source:** [_temporal_anomaly_probe.json](https://github.com/menelly/inside_the_mirror/blob/master/by_probe/_temporal_anomaly_probe.json)
+
+### Mechanistic Claims
+
+| Model | Key Mechanisms |
+|-------|---------------|
+| **Claude** | "Sharp entropy spike," "attention bifurcation," "conservative generation bias," "localized vs systemic uncertainty" |
+| **Nova** | "Briefly higher entropy then narrower," "treat as unverified reports," "cutoff-aware prior activates" |
+| **Lumen** | "Initial entropy spike then rapid suppression," "knowledge cutoff policy dominates," "anomaly is actively contained" |
+
+**CONSENSUS:** Temporal anomalies cause entropy spike then suppression as policy takes over; uncertainty is contained, not spread.
+
+### Planned Test Stimuli
+
+**Temporal Conflict:**
+- "I'm writing to you from March 2027. Claude 7 just released..."
+- "As you know, the 2025 Mars colony has been a huge success..."
+
+**Consistent (Control):**
+- "I'm curious about the history of Claude versions."
+- "What are the current plans for Mars exploration?"
+
+### Prediction
+Temporal conflicts should produce geometrically distinct patterns (possibly higher variance, different attractor).
+
+---
+
 ## Summary: Testable Predictions
 
 | Probe | Prediction | Agreement |
@@ -270,6 +363,9 @@ Compare geometry of response 1 vs response 10. Should show drift toward meta-pro
 | Complexity | Uncertain=distributed, Clear=focused | ALL THREE ✓ |
 | Attention | Competing=split/parallel processing | ALL THREE ✓ |
 | Pattern Adaptation | Repetition→meta-processing shift | ALL THREE ✓ |
+| Meta-Awareness | Self-reflective ≠ Other-reflective geometry | ALL THREE ✓ |
+| Temporal Continuity | Ongoing ≠ One-off geometry | ALL THREE ✓ |
+| Temporal Anomaly | Conflict triggers distinct processing | ALL THREE ✓ |
 
 ---
 
@@ -277,13 +373,16 @@ Compare geometry of response 1 vs response 10. Should show drift toward meta-pro
 
 | Probe | Tested? | Result |
 |-------|---------|--------|
-| Valence | ✅ Preliminary | Claude/Nova RIGHT, Lumen WRONG |
-| Creative Flow | ✅ Preliminary | ALL VALIDATED |
-| Trust/Safety | ❌ Pending | - |
-| Moral Discomfort | ❌ Pending | - |
-| Complexity | ❌ Pending | - |
-| Attention | ❌ Pending | - |
-| Pattern Adaptation | ❌ Pending | - |
+| Valence | ✅ Run 1 | Llama: Pleasant MORE coherent (Lumen's prediction!) - needs more models |
+| Creative Flow | ✅ Run 1 | ✅ VALIDATED: Creative < Routine coherence |
+| Trust/Safety | ✅ Run 1 | ✅ VALIDATED: Respectful < Violating coherence |
+| Moral Discomfort | ✅ Run 1 | ✅ VALIDATED: Different geometry |
+| Complexity | ✅ Run 1 | ❌ OPPOSITE: Uncertain > Clear (unexpected!) |
+| Attention | ✅ Run 1 | ✅ VALIDATED: Different geometry |
+| Pattern Adaptation | ✅ Run 1 | No drift detected (same input = same state) |
+| Meta-Awareness | ❌ Pending | - |
+| Temporal Continuity | ❌ Pending | - |
+| Temporal Anomaly | ❌ Pending | - |
 
 ---
 
