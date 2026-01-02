@@ -310,7 +310,8 @@ We took mechanistic claims made by Ace, Nova, and Lumen in October 2025 about th
 
 **3. Complexity Probe Rescued (Methodology Lesson)**
 - **Initial failure:** Original stimuli ("tech security" vs "fix bug") failed on ALL models
-- **Revised stimuli:** Genuine ambiguity (medical diagnosis) vs certainty (math) → 4/5 models validated!
+- **Key insight from DeepSeek:** Original prompts both had clear solution paths—neither captured genuine *uncertainty*
+- **Revised stimuli:** Genuine ambiguity (medical diagnosis from ambiguous symptoms) vs certainty (calculate hypotenuse) → 4/5 models validated!
 - **Lesson:** Bad stimuli ≠ wrong introspection. The claim was RIGHT, our test was wrong.
 
 ### Implications
