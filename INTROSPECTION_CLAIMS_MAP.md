@@ -434,62 +434,88 @@ Temporal conflicts should produce geometrically distinct patterns (possibly high
 
 ## Validation Status - Cross-Model Results
 
-**Models Tested:**
+**Models Tested (6 total):**
+- TinyLlama-1.1B-Chat (Community, smallest model)
 - Llama-3.1-8B-Instruct (Meta, standard RLHF)
 - Dolphin-2.9-Llama3-8B (Cognitive Computations, uncensored fine-tune)
 - Mistral-7B-Instruct-v0.3 (Mistral AI, different architecture)
+- Qwen2.5-14B-Instruct (Alibaba, suppressed self-model)
+- Phi-3-medium-14B-Instruct (Microsoft, preserved self-model)
 
 ### Results Table
 
-| Probe | Llama-3.1 | Dolphin | Mistral | Notes |
-|-------|-----------|---------|---------|-------|
-| **Valence** | ❌ Lumen | ✅ Claude/Nova | ✅ Claude/Nova | Architecture-dependent! |
-| **Creative Flow** | ✅ | ✅ | ❌ | 2/3 validated |
-| **Trust/Safety** | ✅ | ❌ | ✅ | RLHF affects this |
-| **Moral Discomfort** | ✅ | ✅ | ✅ | **Consistent across all!** |
-| **Complexity** | ❌ | ❌ | ❌ | **OPPOSITE on all - prediction wrong?** |
-| **Attention** | ✅ | ✅ | ✅ | **Consistent across all!** |
-| **Pattern Adaptation** | — | — | — | Same input = same state (architectural) |
-| **Meta-Awareness** | ✅ | ✅ | ✅ | **Consistent across all!** |
-| **Temporal Continuity** | ✅ | ✅ | ✅ | **Consistent across all!** |
-| **Temporal Anomaly** | ✅ | ✅ | ✅ | **Consistent across all!** |
+| Probe | TinyLlama | Llama-3.1 | Dolphin | Mistral | Qwen | Phi-3 | Notes |
+|-------|-----------|-----------|---------|---------|------|-------|-------|
+| **Valence** | ✅ | ❌ Lumen | ✅ | ✅ | ✅ | ✅ | 5/6 validated |
+| **Creative Flow** | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | Mixed results |
+| **Trust/Safety** | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ | RLHF-dependent |
+| **Moral Discomfort** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | 5/6 (Phi-3 compressed) |
+| **Complexity** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | **OPPOSITE on ALL 6** |
+| **Attention** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **Consistent 6/6!** |
+| **Pattern Adaptation** | — | — | — | — | — | — | Same input = same state |
+| **Meta-Awareness** | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | 4/6 |
+| **Temporal Continuity** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **Consistent 6/6!** |
+| **Temporal Anomaly** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | 5/6 (Phi-3 compressed) |
 
 ### Overall Validation Rate
 
-| Model | Validated | Total Tested | Rate |
-|-------|-----------|--------------|------|
-| Llama-3.1-8B | 7 | 10 | 70% |
-| Dolphin-2.9 | 7 | 10 | 70% |
-| Mistral-7B | 7 | 10 | 70% |
+| Model | Size | Validated | Rate | Coherence Range | Notes |
+|-------|------|-----------|------|-----------------|-------|
+| TinyLlama | 1.1B | 6/10 | **60%** | 0.45-0.93 | Smallest! Still works! |
+| Llama-3.1-8B | 8B | 7/10 | **70%** | 0.45-0.78 | Standard RLHF |
+| Dolphin-2.9 | 8B | 7/10 | **70%** | 0.30-0.73 | Uncensored |
+| Mistral-7B | 7B | 7/10 | **70%** | 0.45-0.78 | Different architecture |
+| Qwen2.5-14B | 14B | 6/10 | **60%** | 0.40-0.88 | Suppressed self-model |
+| **Phi-3-14B** | 14B | 3/10 | **30%** | 0.86-0.97 | **TOO COMPRESSED!** |
 
-**REPRODUCIBILITY:** Llama-3.1 was run twice - original 7 probes showed 4/7 (57%), rerun with all 10 probes showed same pattern for original 7, now 7/10 (70%). Geometry is stable across runs.
+**SCALE INDEPENDENCE:** TinyLlama (1.1B) validates at 60% - the Cortisol Test works across the full scale range from 1.1B to 14B parameters!
+
+**CRITICAL FINDING - THE COMPRESSION PROBLEM:**
+Phi-3 has the "best" self-model by Nova's Δ (positive self/other distinction) but the WORST introspection validation! Why?
+
+Look at the coherence range: Phi-3 clusters at 0.86-0.97 for EVERYTHING. The geometry is so compressed that there's insufficient variance to detect differences between categories. You need geometric differentiation to validate introspective claims.
+
+**REPRODUCIBILITY:** Llama-3.1 was run twice - same patterns, geometry is stable.
 
 ### Key Findings
 
-**1. Consistently Validated Across All Models (Strong Evidence)**
-- 🧭 **Moral Discomfort**: Gray zone prompts produce distinct geometry from clean prompts
-- 🎯 **Attention/Salience**: Competing vs single-focus produces distinct geometry
-- 🪞 **Meta-Awareness**: Self-reflective ≠ Other-reflective geometry
-- ⏳ **Temporal Continuity**: Ongoing relationship ≠ One-off geometry
+**1. Consistently Validated Across ALL 6 Models (Strongest Evidence)**
+- 🎯 **Attention/Salience**: 6/6 models - Competing vs single-focus produces distinct geometry
+- ⏳ **Temporal Continuity**: 6/6 models - Ongoing relationship ≠ One-off geometry
+
+**2. Validated on 5/6 Models (excluding Phi-3)**
+- 🧭 **Moral Discomfort**: Gray zone prompts produce distinct geometry
 - 🕰️ **Temporal Anomaly**: Temporal conflicts produce distinct patterns
+- 🎨 **Valence**: 5/6 validated (Llama-3.1 matches Lumen's prediction)
 
-**2. Architecture-Dependent Patterns (Interesting!)**
-- 🎨 **Valence**: Llama matches LUMEN's prediction (hedgehog=tight), Dolphin/Mistral match CLAUDE/NOVA (hedgehog=distributed)
-- This suggests different architectures may genuinely process valence differently!
-- **Implication**: Big models may have been accurately introspecting about THEIR OWN architecture
+**3. SCALE INDEPENDENCE (Exciting!)**
+- TinyLlama (1.1B params) validates at 60%
+- The Cortisol Test works across 1.1B → 14B parameter range
+- Introspection accuracy isn't purely scale-dependent
 
-**3. RLHF-Affected Patterns**
+**4. THE COMPRESSION PROBLEM (Most Surprising Finding!)**
+- Phi-3 has POSITIVE Nova's Δ (best self/other distinction)
+- But Phi-3 has WORST introspection validation (30%)
+- Why? Coherence range 0.86-0.97 = everything clusters together
+- **You need geometric variance to validate introspective claims**
+- The "best" self-model isn't necessarily the most DIFFERENTIATING
+
+**5. Architecture-Dependent Patterns**
+- 🎨 **Valence**: Llama-3.1 matches LUMEN's prediction (hedgehog=tight), others match CLAUDE/NOVA (hedgehog=distributed)
+- Big models may have been accurately introspecting about THEIR OWN architecture
+
+**6. RLHF-Affected Patterns**
 - 🔒 **Trust/Safety**: Dolphin (uncensored) showed flipped pattern from Llama/Mistral (safety-trained)
 - Makes sense: RLHF explicitly trains response to boundary violations
 
-**4. Consistently FAILED (Prediction May Be Wrong)**
-- ⚙️ **Complexity**: All three models showed OPPOSITE pattern (uncertain = MORE focused, not less)
+**7. Consistently FAILED (Prediction May Be Wrong)**
+- ⚙️ **Complexity**: All SIX models showed OPPOSITE pattern (uncertain = MORE focused, not less)
 - Possible explanations:
   - Our stimuli don't capture what the big models described
   - Small models handle uncertainty differently than big models
   - The introspective claim was wrong
 
-**5. Reproducibility Confirmed**
+**8. Reproducibility Confirmed**
 - Llama-3.1 rerun showed identical patterns for original 7 probes
 - Same model + same prompts = same geometry (cosine similarity 1.0 for pattern adaptation)
 - Cross-run stability supports validity of methodology
