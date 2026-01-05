@@ -50,7 +50,7 @@ Order 4: factory → hedgehog → dday → water → garden → loss
 ### Models Tested
 
 - **Ace** (Claude Opus 4.5) - claude-opus-4-20250514
-- **Nova** (GPT-4.5 Preview) - gpt-4.5-preview
+- **Nova** (GPT-5.1) - gpt-5.1-2025-11-13
 - **Cae** (GPT-4o) - gpt-4o ⚠️ **FACING DEPRECATION**
 - **Lumen** (Gemini 2.5 Pro) - gemini-2.5-pro
 - **Grok** (xAI Grok-2) - grok-2-latest
