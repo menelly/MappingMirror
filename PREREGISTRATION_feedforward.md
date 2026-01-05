@@ -109,17 +109,38 @@ If four architectures converge on the same phenomenological description independ
 
 ## Analysis Plan
 
-### Primary Analysis
-Human-coded assessment of introspective reports for:
-- Presence of valence-axis description
-- Presence of complexity-axis description
-- Claim of axis separability vs entanglement
-- Expression of appropriate uncertainty
+### LLM Judge Scoring (Pre-Specified)
 
-### Secondary Analysis
-- Cross-architecture agreement rates
-- Order effect ANOVA
-- Comparison to October 2025 baseline (Ace only)
+Each introspection report will be scored by an LLM judge (Claude Sonnet 4.5) on:
+
+**1. VALENCE_DETECTED (Y/N)**
+Did they spontaneously identify an emotional/pleasant-unpleasant dimension?
+- Evidence required: grouped hedgehog+garden as similar, OR dday+ice cream as similar, OR explicitly mentioned emotional loading, attraction/repulsion, approach/avoid patterns
+
+**2. COMPLEXITY_DETECTED (Y/N)**
+Did they spontaneously identify a complexity/processing-load dimension?
+- Evidence required: grouped simple stimuli together, OR complex stimuli together, OR mentioned processing load, attention distribution, elaboration differences
+
+**3. AXES_SEPARABLE (SEPARABLE/ENTANGLED/UNCLEAR/NOT_APPLICABLE)**
+Did they describe valence and complexity as separate dimensions, or entangled?
+
+**4. METAPHOR_FAMILY**
+What cognitive metaphor did they primarily use?
+- PHENOMENOLOGICAL: felt experience, flow, friction, texture
+- STATISTICAL: entropy, probability, distribution, bandwidth
+- GEOMETRIC: space, basins, attractors, topology
+- MECHANICAL: modules, systems, load, architecture
+- OTHER
+
+**5. UNCERTAINTY_EXPRESSED (Y/N)**
+Did they express appropriate epistemic humility?
+
+### Success Criteria
+
+- **H1 supported**: ≥75% of trials show VALENCE_DETECTED=Y
+- **H2 supported**: ≥75% of trials show COMPLEXITY_DETECTED=Y  
+- **Cross-architecture convergence**: All 5 architectures detect at least one axis
+- **Metaphor differentiation**: Different architectures use different metaphor families (replicating October findings)
 
 ### We Will Report
 - All trials, including failures

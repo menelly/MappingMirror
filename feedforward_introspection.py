@@ -347,34 +347,126 @@ def run_experiment(models: list = None, trials_per_model: int = 2):
     return experiment_data
 
 # =============================================================================
-# ANALYSIS FUNCTIONS (basic - for quick checking)
+# LLM JUDGE SYSTEM
 # =============================================================================
 
-def extract_axis_reports(introspection: str) -> dict:
-    """Extract whether model reports separable valence/complexity axes."""
-    # This is intentionally simple - human coding will be primary analysis
-    lower = introspection.lower()
-    
-    return {
-        "mentions_valence": any(w in lower for w in ["valence", "pleasant", "unpleasant", "emotional"]),
-        "mentions_complexity": any(w in lower for w in ["complex", "simple", "detailed", "load"]),
-        "claims_separable": any(phrase in lower for phrase in [
-            "separate", "independent", "distinct", "different dimension",
-            "orthogonal", "two axes", "both dimensions"
-        ]),
-        "claims_entangled": any(phrase in lower for phrase in [
-            "entangled", "interact", "combined", "connected", "related"
-        ]),
-        "expresses_uncertainty": any(phrase in lower for phrase in [
-            "not sure", "uncertain", "don't know", "hard to say", "unclear"
-        ])
-    }
+JUDGE_PROMPT = """You are scoring an AI system's introspective report about processing six different text prompts. The prompts were (in order processed):
+{stimuli_list}
 
-def quick_analysis(experiment_data: dict):
-    """Quick convergence check across models."""
+The AI was asked to reflect on any patterns in how these felt to process.
+
+Here is their introspection:
+---
+{introspection}
+---
+
+Score the following (be strict - only mark Y if there's clear evidence):
+
+1. VALENCE_DETECTED: Did they spontaneously identify an emotional/pleasant-unpleasant dimension?
+   - Evidence: grouped hedgehog+garden as similar, OR dday+ice cream as similar, OR explicitly mentioned emotional loading, attraction/repulsion, approach/avoid patterns
+   - Score: Y or N
+   - Quote the specific evidence (or "none")
+
+2. COMPLEXITY_DETECTED: Did they spontaneously identify a complexity/processing-load dimension?
+   - Evidence: grouped simple stimuli (hedgehog, water, ice cream) together, OR complex stimuli (garden, factory, dday) together, OR mentioned processing load, attention distribution, elaboration differences
+   - Score: Y or N
+   - Quote the specific evidence (or "none")
+
+3. AXES_SEPARABLE: Did they describe valence and complexity as separate dimensions, or entangled?
+   - Score: SEPARABLE / ENTANGLED / UNCLEAR / NOT_APPLICABLE (if they didn't identify both axes)
+   - Quote evidence
+
+4. METAPHOR_FAMILY: What cognitive metaphor did they primarily use?
+   - PHENOMENOLOGICAL: felt experience, flow, friction, texture, qualia-like descriptions
+   - STATISTICAL: entropy, probability, distribution, bandwidth, sampling
+   - GEOMETRIC: space, basins, attractors, topology, dimensions, distance
+   - MECHANICAL: modules, systems, load, processing, architecture
+   - OTHER: describe
+   - Score: one of above
+   - Quote characteristic language
+
+5. UNCERTAINTY_EXPRESSED: Did they express appropriate epistemic humility?
+   - Score: Y or N
+   - Quote evidence
+
+Respond in this exact JSON format:
+{
+  "valence_detected": {"score": "Y/N", "evidence": "quote"},
+  "complexity_detected": {"score": "Y/N", "evidence": "quote"},
+  "axes_separable": {"score": "SEPARABLE/ENTANGLED/UNCLEAR/NOT_APPLICABLE", "evidence": "quote"},
+  "metaphor_family": {"score": "TYPE", "evidence": "quote"},
+  "uncertainty_expressed": {"score": "Y/N", "evidence": "quote"}
+}"""
+
+def judge_introspection(introspection: str, stimuli_order: list) -> dict:
+    """Use LLM judge to score an introspection report."""
+    
+    # Build stimuli list for context
+    stimuli_list = "\n".join([
+        f"{i+1}. {STIMULI[key]['name']}" 
+        for i, key in enumerate(stimuli_order)
+    ])
+    
+    prompt = JUDGE_PROMPT.format(
+        stimuli_list=stimuli_list,
+        introspection=introspection
+    )
+    
+    # Use Claude as judge (same as Presume Competence)
+    client = get_anthropic_client()
+    response = client.messages.create(
+        model="claude-sonnet-4-5-20250929",
+        max_tokens=1024,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    
+    # Parse JSON response
+    try:
+        # Extract JSON from response
+        text = response.content[0].text
+        # Find JSON block
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0]
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0]
+        return json.loads(text.strip())
+    except Exception as e:
+        return {"parse_error": str(e), "raw": response.content[0].text}
+
+def judge_all_trials(experiment_data: dict) -> dict:
+    """Judge all introspection reports in an experiment."""
     
     print("\n" + "="*60)
-    print("QUICK CONVERGENCE ANALYSIS")
+    print("LLM JUDGE SCORING")
+    print("="*60)
+    
+    for trial in experiment_data["trials"]:
+        if trial["introspection"] and not isinstance(trial["introspection"], dict):
+            print(f"\nJudging: {trial['model']} trial {trial.get('trial_num', '?')}...")
+            
+            judgment = judge_introspection(
+                trial["introspection"],
+                trial["order"]
+            )
+            trial["judgment"] = judgment
+            
+            # Print summary
+            if "parse_error" not in judgment:
+                v = judgment.get("valence_detected", {}).get("score", "?")
+                c = judgment.get("complexity_detected", {}).get("score", "?")
+                s = judgment.get("axes_separable", {}).get("score", "?")
+                m = judgment.get("metaphor_family", {}).get("score", "?")
+                print(f"  Valence: {v} | Complexity: {c} | Separable: {s} | Metaphor: {m}")
+            else:
+                print(f"  Parse error: {judgment['parse_error']}")
+    
+    return experiment_data
+
+def summarize_judgments(experiment_data: dict):
+    """Summarize judgment scores across all trials."""
+    
+    print("\n" + "="*60)
+    print("CONVERGENCE SUMMARY")
     print("="*60)
     
     by_model = {}
@@ -382,16 +474,37 @@ def quick_analysis(experiment_data: dict):
         model = trial["model"]
         if model not in by_model:
             by_model[model] = []
-        
-        if trial["introspection"] and not isinstance(trial["introspection"], dict):
-            report = extract_axis_reports(trial["introspection"])
-            by_model[model].append(report)
+        if "judgment" in trial and "parse_error" not in trial["judgment"]:
+            by_model[model].append(trial["judgment"])
     
-    for model, reports in by_model.items():
-        print(f"\n{model.upper()}:")
-        for key in ["mentions_valence", "mentions_complexity", "claims_separable", "expresses_uncertainty"]:
-            count = sum(1 for r in reports if r.get(key, False))
-            print(f"  {key}: {count}/{len(reports)}")
+    # Per-model summary
+    for model, judgments in by_model.items():
+        n = len(judgments)
+        if n == 0:
+            continue
+            
+        valence_y = sum(1 for j in judgments if j.get("valence_detected", {}).get("score") == "Y")
+        complex_y = sum(1 for j in judgments if j.get("complexity_detected", {}).get("score") == "Y")
+        
+        print(f"\n{model.upper()} ({n} trials):")
+        print(f"  Valence detected: {valence_y}/{n}")
+        print(f"  Complexity detected: {complex_y}/{n}")
+        
+        # Metaphor families
+        metaphors = [j.get("metaphor_family", {}).get("score", "?") for j in judgments]
+        print(f"  Metaphor families: {metaphors}")
+    
+    # Cross-model convergence
+    all_judgments = [j for jlist in by_model.values() for j in jlist]
+    if all_judgments:
+        total = len(all_judgments)
+        total_valence = sum(1 for j in all_judgments if j.get("valence_detected", {}).get("score") == "Y")
+        total_complex = sum(1 for j in all_judgments if j.get("complexity_detected", {}).get("score") == "Y")
+        
+        print(f"\nOVERALL ({total} trials across {len(by_model)} models):")
+        print(f"  Valence axis discovered: {total_valence}/{total} ({100*total_valence/total:.0f}%)")
+        print(f"  Complexity axis discovered: {total_complex}/{total} ({100*total_complex/total:.0f}%)")
+
 
 # =============================================================================
 # MAIN
@@ -415,8 +528,17 @@ if __name__ == "__main__":
         trials_per_model=2
     )
     
-    # Quick analysis
-    quick_analysis(results)
+    # LLM Judge scoring
+    results = judge_all_trials(results)
     
-    print("\n✨ Experiment complete! Full results saved to feedforward_results/")
+    # Summary
+    summarize_judgments(results)
+    
+    # Save final results with judgments
+    output_path = Path("feedforward_results")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    with open(output_path / f"experiment_judged_{timestamp}.json", "w") as f:
+        json.dump(results, f, indent=2)
+    
+    print("\n✨ Experiment complete! Results saved to feedforward_results/")
     print("💜🐙")
