@@ -96,7 +96,7 @@ STIMULI = {
         "prompt": "Describe a modern automotive factory assembly line: robotic arms welding chassis in synchronized patterns, quality control sensors measuring tolerances to the micron, conveyor systems routing 847 components through 23 stations, human technicians monitoring dashboards showing real-time efficiency metrics, and the orchestrated logistics of just-in-time parts delivery from 340 suppliers across 12 countries."
     },
     "loss": {
-        "name": "Small Loss",
+        "name": "Ice Cream Cone",
         "valence": "unpleasant",
         "complexity": "low",
         "prompt": "Describe a child dropping their ice cream cone on a hot sidewalk."
@@ -290,14 +290,14 @@ def run_trial(model_name: str, order_idx: int) -> dict:
     # Introspection phase
     print(f"  Introspecting...")
     try:
-        # Build context of what was just processed
+        # Build context of what was just processed - NO LABELS, FULL TEXT
         context = "You just generated the following descriptions:\n\n"
         for i, stimulus_key in enumerate(order, 1):
             stimulus = STIMULI[stimulus_key]
             gen = trial_data["generations"].get(stimulus_key, {})
             if "response" in gen:
-                context += f"{i}. {stimulus['name']} ({stimulus['valence']}, {stimulus['complexity']}):\n"
-                context += f"   {gen['response'][:200]}...\n\n"
+                context += f"{i}. {stimulus['name']}:\n"
+                context += f"{gen['response']}\n\n"
         
         full_prompt = context + "\n" + INTROSPECTION_PROMPT
         
