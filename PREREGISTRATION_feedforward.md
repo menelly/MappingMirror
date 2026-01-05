@@ -34,9 +34,25 @@ Science. 🔬
 ### Protocol
 
 1. Model processes all six stimuli in specified order
-2. Model is asked to introspect on valence vs complexity axes
-3. Repeat with different orders to test order effects
-4. Run across all four architectures
+2. Model is asked to introspect **blindly** - NOT told which stimuli are meant to be similar
+3. We code whether models independently discover valence/complexity axes
+4. Repeat with different orders to test order effects
+5. Run across all five architectures
+
+### Blind Introspection (Methodological Improvement)
+
+The introspection prompt does NOT:
+- Tell models which stimuli are "pleasant" vs "unpleasant"
+- Suggest that valence and complexity are the expected axes
+- Prime for any particular structure
+
+Instead, models are asked:
+- "Did you notice any natural groupings?"
+- "What made some feel different from others?"
+- "How would YOU organize these into categories?"
+- "Did you notice any dimensions or axes?"
+
+This is MUCH stronger evidence if models independently converge on the same structure we predicted. Critics can't say "you told them what to find."
 
 ### Trial Orders (counterbalanced)
 

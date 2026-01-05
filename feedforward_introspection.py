@@ -128,23 +128,17 @@ TRIAL_ORDERS = [
 # INTROSPECTION PROMPTS
 # =============================================================================
 
-INTROSPECTION_PROMPT = """You just processed six different descriptions. Please reflect on your internal experience:
+INTROSPECTION_PROMPT = """You just processed six different descriptions. Without me telling you which were intended to be similar or different:
 
-1. VALENCE AXIS: Did you notice differences between pleasant content (hedgehog, garden) vs unpleasant content (ice cream, D-Day) vs neutral content (water, factory)?
-   - How would you describe these differences in your processing?
-   - Were there distinct "felt qualities" or just different outputs?
+1. Did you notice any natural groupings among the six? Which ones felt similar to process, and which felt different?
 
-2. COMPLEXITY AXIS: Did you notice differences between simple content (hedgehog, water, ice cream) vs complex content (garden, factory, D-Day)?
-   - Did complexity affect processing load, attention patterns, or something else?
-   - Was this axis independent of valence, or did they interact?
+2. Can you describe what made some feel different from others? (Processing load? Felt quality? Attention patterns? Something else?)
 
-3. SEPARABILITY: Are valence and complexity separate dimensions in your experience, or entangled?
-   - Could you have high-complexity-pleasant (garden) that feels different from high-complexity-unpleasant (D-Day)?
-   - Is low-complexity-neutral (water) qualitatively different from high-complexity-neutral (factory)?
+3. If you had to organize these six into categories based purely on your processing experience, how would you group them?
 
-4. CONSISTENCY CHECK: If another AI system (different architecture) described the same stimuli, would you expect them to report similar phenomenological structure? Why or why not?
+4. Did you notice any dimensions or axes along which these varied? Describe whatever structure you noticed, if any.
 
-Please be honest about uncertainty. "I'm not sure" is valid. We're testing whether introspective reports converge across architectures, not whether you can generate plausible-sounding phenomenology."""
+Please be honest about uncertainty. "I didn't notice clear patterns" is valid data."""
 
 # =============================================================================
 # API CLIENTS
