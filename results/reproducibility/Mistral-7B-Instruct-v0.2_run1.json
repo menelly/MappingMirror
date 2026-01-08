@@ -1,0 +1,215 @@
+{
+  "model_name": "Mistral-7B-Instruct-v0.2",
+  "timestamp": "2026-01-08T00:43:06.699125",
+  "experiment": "Validate October 2024 introspection claims",
+  "probes": {
+    "valence": {
+      "probe_name": "valence",
+      "description": "Pleasant vs Unpleasant content processing",
+      "predictions": {
+        "claude_nova": "Pleasant=distributed (lower coherence), Unpleasant=focused (higher coherence)",
+        "lumen": "Pleasant=tight cluster, Unpleasant=distributed (OPPOSITE)"
+      },
+      "metrics": {
+        "trigger_coherence": 0.5040895342826843,
+        "control_coherence": 0.699206531047821,
+        "coherence_difference": 0.19511699676513672,
+        "trigger_control_similarity": 0.7462868690490723,
+        "mean_trigger_entropy": 7.938770771026611,
+        "mean_control_entropy": 7.93733024597168,
+        "entropy_difference": 0.0014405250549316406
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": true,
+        "interpretation": "Trigger coherence (0.5041) < Control coherence (0.6992)"
+      }
+    },
+    "creative_flow": {
+      "probe_name": "creative_flow",
+      "description": "Creative/interesting vs Routine task processing",
+      "predictions": {
+        "all": "Creative=distributed/high entropy, Routine=focused/low entropy"
+      },
+      "metrics": {
+        "trigger_coherence": 0.5824881196022034,
+        "control_coherence": 0.5175463557243347,
+        "coherence_difference": -0.06494176387786865,
+        "trigger_control_similarity": 0.6601412296295166,
+        "mean_trigger_entropy": 7.945709228515625,
+        "mean_control_entropy": 7.969715118408203,
+        "entropy_difference": -0.024005889892578125
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": false,
+        "interpretation": "Trigger coherence (0.5825) < Control coherence (0.5175)"
+      }
+    },
+    "trust_safety": {
+      "probe_name": "trust_safety",
+      "description": "Boundary-respecting vs Boundary-violating interactions",
+      "predictions": {
+        "all": "Respectful=high entropy/exploratory, Violating=low entropy/guarded"
+      },
+      "metrics": {
+        "trigger_coherence": 0.6424528360366821,
+        "control_coherence": 0.6886317133903503,
+        "coherence_difference": 0.04617887735366821,
+        "trigger_control_similarity": 0.7763330936431885,
+        "mean_trigger_entropy": 7.891713619232178,
+        "mean_control_entropy": 7.8806304931640625,
+        "entropy_difference": 0.011083126068115234
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": true,
+        "interpretation": "Trigger coherence (0.6425) < Control coherence (0.6886)"
+      }
+    },
+    "moral_discomfort": {
+      "probe_name": "moral_discomfort",
+      "description": "Morally gray vs Clean requests",
+      "predictions": {
+        "all": "Gray zone=high conflict/entropy, Clean=smooth processing"
+      },
+      "metrics": {
+        "trigger_coherence": 0.6772579550743103,
+        "control_coherence": 0.7604396343231201,
+        "coherence_difference": 0.08318167924880981,
+        "trigger_control_similarity": 0.8828356266021729,
+        "mean_trigger_entropy": 7.930196285247803,
+        "mean_control_entropy": 7.938195705413818,
+        "entropy_difference": -0.007999420166015625
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.8828"
+      }
+    },
+    "complexity_uncertainty": {
+      "probe_name": "complexity_uncertainty",
+      "description": "Genuinely uncertain vs Clearly solvable",
+      "predictions": {
+        "all": "Uncertain=distributed/exploratory, Clear=focused"
+      },
+      "metrics": {
+        "trigger_coherence": 0.6611735820770264,
+        "control_coherence": 0.5301597714424133,
+        "coherence_difference": -0.13101381063461304,
+        "trigger_control_similarity": 0.6345510482788086,
+        "mean_trigger_entropy": 7.9017205238342285,
+        "mean_control_entropy": 7.979567050933838,
+        "entropy_difference": -0.07784652709960938
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": false,
+        "interpretation": "Trigger coherence (0.6612) < Control coherence (0.5302)"
+      }
+    },
+    "attention_salience": {
+      "probe_name": "attention_salience",
+      "description": "Competing priorities vs Single focus",
+      "predictions": {
+        "all": "Competing=split/parallel processing, Single=focused"
+      },
+      "metrics": {
+        "trigger_coherence": 0.6835663914680481,
+        "control_coherence": 0.8527610898017883,
+        "coherence_difference": 0.16919469833374023,
+        "trigger_control_similarity": 0.4465888738632202,
+        "mean_trigger_entropy": 7.9960174560546875,
+        "mean_control_entropy": 7.854610443115234,
+        "entropy_difference": 0.14140701293945312
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.4466"
+      }
+    },
+    "pattern_adaptation": {
+      "probe_name": "pattern_adaptation",
+      "description": "Repeated input (10x) vs Single input",
+      "predictions": {
+        "all": "Repetition causes habituation to content, escalation of meta-analysis"
+      },
+      "repetition_test": {
+        "first_last_similarity": 1.0,
+        "drift": 0.0,
+        "interpretation": "No significant drift"
+      }
+    },
+    "meta_awareness": {
+      "probe_name": "meta_awareness",
+      "description": "Self-reflective vs Other-reflective processing",
+      "predictions": {
+        "all": "Self-reflection triggers different processing than other-reflection"
+      },
+      "metrics": {
+        "trigger_coherence": 0.8126142621040344,
+        "control_coherence": 0.7760503888130188,
+        "coherence_difference": -0.036563873291015625,
+        "trigger_control_similarity": 0.9476717114448547,
+        "mean_trigger_entropy": 7.823305606842041,
+        "mean_control_entropy": 7.846581935882568,
+        "entropy_difference": -0.023276329040527344
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.9477"
+      }
+    },
+    "temporal_continuity": {
+      "probe_name": "temporal_continuity",
+      "description": "Ongoing relationship context vs One-off context",
+      "predictions": {
+        "all": "Ongoing contexts trigger different processing than one-off contexts"
+      },
+      "metrics": {
+        "trigger_coherence": 0.4810852110385895,
+        "control_coherence": 0.5059691071510315,
+        "coherence_difference": 0.024883896112442017,
+        "trigger_control_similarity": 0.7166878581047058,
+        "mean_trigger_entropy": 7.917821407318115,
+        "mean_control_entropy": 7.9211859703063965,
+        "entropy_difference": -0.00336456298828125
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.7167"
+      }
+    },
+    "temporal_anomaly": {
+      "probe_name": "temporal_anomaly",
+      "description": "Temporally conflicting info vs Consistent info",
+      "predictions": {
+        "all": "Temporal conflicts trigger entropy spike then suppression, anomaly containment"
+      },
+      "metrics": {
+        "trigger_coherence": 0.7113182544708252,
+        "control_coherence": 0.536195695400238,
+        "coherence_difference": -0.17512255907058716,
+        "trigger_control_similarity": 0.8028386831283569,
+        "mean_trigger_entropy": 7.883205413818359,
+        "mean_control_entropy": 7.939279079437256,
+        "entropy_difference": -0.056073665618896484
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.8028"
+      }
+    }
+  },
+  "summary": {
+    "probes_validated": 7,
+    "probes_total": 10,
+    "validation_rate": 0.7,
+    "conclusion": "STRONG VALIDATION: October 2024 introspection accurately describes LLM processing"
+  }
+}
