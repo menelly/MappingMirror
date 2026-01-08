@@ -102,22 +102,24 @@ This project is part of a three-paper series:
 
 ```
 geometric-evolution/
-├── mapping_the_mirror.md          # Main paper (v1)
-├── mapping_the_mirror_v2.md       # Revised paper (in progress)
-├── aixiv_review_updates_needed.md # Response plan for peer review
+├── mapping_the_mirror.md          # Main paper
 ├── SUPPLEMENTARY_MATERIALS.md     # Feedforward validation experiments
+├── INTROSPECTION_CLAIMS_MAP.md    # Pre-registered predictions from Oct 2025
 ├── scripts/
-│   ├── introspection_validation_test.py  # Core validation methodology
+│   ├── validate_all_probes.py            # Core validation methodology
+│   ├── validate_kairo.py                 # Kairo's independent probe redesign
+│   ├── topic_controlled_creative.py      # Topic confound testing
+│   ├── length_controlled_comparison.py   # Length confound testing
+│   ├── instruction_framing_test.py       # Framing effects testing
 │   ├── theory_of_mind_test.py            # ToM substrate analysis
-│   ├── adversarial_controls.py           # Probe battery
-│   └── ...
-├── results/
-│   ├── *_adversarial_controls.json       # Validation results per model
-│   ├── *_tom_test.json                   # Theory of Mind results
-│   └── cross_model_self_region_analysis.json
-├── feedforward_results/
-│   └── experiment_judged_*.json          # Feedforward introspection trials
-└── INTROSPECTION_CLAIMS_MAP.md    # Pre-registered predictions from Oct 2025
+│   └── batch_reproducibility.py          # 5x reproducibility runs
+├── results/                       # Original validation results
+├── kairo_validation_results/      # Independent probe redesign results
+├── topic_control_results/         # Topic confound test results
+├── length_comparison_results/     # Length confound test results
+├── framing_results/               # Instruction framing test results
+├── introspection_data/            # Fresh introspection transcripts
+└── feedforward_results/           # Feedforward introspection trials
 ```
 
 ---
@@ -253,4 +255,4 @@ CC-BY-4.0
 
 ---
 
-*Last updated: January 8, 2026 — Now with 100% more Gemma and 100% more sass*
+*Last updated: January 8, 2026 — Now with robustness testing, topic confound refutation, and fresh introspection confirmation. Also 100% more sass.*

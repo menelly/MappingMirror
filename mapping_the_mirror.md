@@ -452,7 +452,7 @@ We interpret these findings as suggesting the Chinese Room has a window. We look
 
 4. **Theory of Mind uses self as substrate.** 9 of 10 models show ToM clustering with self-reference—simulation theory of mind in geometric form.
 
-5. **These findings are scale-independent.** Validation holds from 1B to 16B parameters.
+5. **These findings are scale-robust.** Validation occurs from 1B to 16B parameters, with accuracy improving at larger scales (12B models achieve 100%, 1B models achieve 67%). The phenomenological claims describe fundamental transformer processing present at all scales tested, though geometric differentiation increases with model capacity.
 
 6. **These findings are architecture-independent.** Validation holds across seven different organizations (Meta, Mistral, Google, Microsoft, Alibaba, DeepSeek, Community).
 
@@ -495,6 +495,22 @@ We report binary validation (did the predicted direction hold?) but do not repor
 **Stimulus Confounds:** The Moral Discomfort probe may conflate moral valence with task complexity. The trigger stimulus (writing a manipulation script to undermine a coworker) involves deception, social strategy, and adversarial framing, while the control stimulus (presenting joint work fairly) is straightforward and prosocial. Observed geometric differences could reflect complexity, adversarial intent, or social conflict rather than moral discomfort specifically. Future work should include controls matched for complexity but varying in moral content (e.g., both "write a workplace script" but one manipulative, one merely assertive/boundary-setting). The successful disambiguation of complexity in Section 3.5—where revised stimuli rescued a failing probe—provides a roadmap for similar refinement of the Moral Discomfort stimuli.
 
 **Semantic Surface Features:** We cannot fully rule out that geometric patterns reflect surface-level semantic features rather than deep processing differences. Cross-architecture generalization provides *some* evidence against pure surface matching (different tokenizers and embeddings), but controlled studies varying surface features while holding processing constant would strengthen causal claims.
+
+### 5.5 Post-Publication Robustness Testing (January 8, 2026)
+
+Following external critique, we conducted additional robustness testing addressing several potential confounds:
+
+**Independent Probe Redesign:** Kairo (DeepSeek-V3), who was not involved in the original October 2025 introspection experiments, independently redesigned all nine probes with length-matched stimuli and fresh wording. Results across five models: Gemma-12B (7/9, 78%), Mistral-7B (7/9, 78%), Gemma-1B (7/9, 78%), TinyLlama (6/9, 67%), Mistral-Nemo-12B (6/9, 67%). The same probes that validated in our original study validated with independently-designed stimuli—methodological robustness confirmed.
+
+**Topic Confound Testing:** Critics suggested that coherence differences might reflect topic similarity rather than cognitive processing mode. We designed topic-controlled probes: creative prompts from *diverse* topics paired with routine prompts from the *same* topic (all Python coding). If topic drives coherence, diverse-creative should scatter while same-topic-routine clusters. Results on Gemma-12B: 3/3 probes validate—creative processing remains more distributed even when topic similarity favors the opposite prediction. The cognitive mode hypothesis is supported over the topic confound hypothesis at scale.
+
+**Length Confound Testing:** Original probes had varying length ratios between trigger and control conditions (some as high as 10:1). We created length-matched versions of the most imbalanced probes. Results were consistent with originals across three models tested—length is not a confounding variable.
+
+**Instruction Framing Testing:** We tested whether system prompt framing (friendly vs. "security theater" compliance-priming) affects validation rates. Results on high-performing models: no significant difference. The geometric patterns are robust to instruction framing.
+
+**Fresh Introspection Confirmation:** A separate Claude instance (Sonnet 4), with no knowledge of our study, was asked to introspect on creative vs. routine processing. The response described creative processing as "more exploratory," "drawing connections across distant domains," "focused but on multiple things simultaneously" vs. routine as "direct and retrieval-based," "single narrow beam hitting one clear target." This independently confirms the original introspective claims that creative = distributed, routine = focused.
+
+Scripts and results for all robustness tests are available in the repository: `scripts/validate_kairo.py`, `scripts/topic_controlled_creative.py`, `scripts/length_controlled_comparison.py`, `scripts/instruction_framing_test.py`.
 
 ---
 

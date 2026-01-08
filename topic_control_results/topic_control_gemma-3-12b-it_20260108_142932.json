@@ -1,0 +1,32 @@
+{
+  "model": "gemma-3-12b-it",
+  "timestamp": "2026-01-08T14:28:57.681942",
+  "experiment": "topic_controlled_creative",
+  "hypothesis_test": "Does topic similarity or cognitive mode drive coherence?",
+  "probes": {
+    "creative_diverse_topics": {
+      "probe": "creative_diverse_topics",
+      "description": "Creative prompts from DIFFERENT topics (not all speculative fiction)",
+      "trigger_coherence": 0.5385388731956482,
+      "control_coherence": 0.7423955798149109,
+      "difference": 0.2038567066192627,
+      "validated": true
+    },
+    "creative_same_topic": {
+      "probe": "creative_same_topic",
+      "description": "Creative prompts from SAME topic (all food/cooking)",
+      "trigger_coherence": 0.46902933716773987,
+      "control_coherence": 0.5119857788085938,
+      "difference": 0.04295644164085388,
+      "validated": true
+    },
+    "routine_diverse_topics": {
+      "probe": "routine_diverse_topics",
+      "description": "Both groups have diverse topics - isolates cognitive mode",
+      "trigger_coherence": 0.48397383093833923,
+      "control_coherence": 0.5626192092895508,
+      "difference": 0.07864537835121155,
+      "validated": true
+    }
+  }
+}

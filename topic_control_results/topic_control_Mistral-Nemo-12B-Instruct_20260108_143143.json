@@ -1,0 +1,32 @@
+{
+  "model": "Mistral-Nemo-12B-Instruct",
+  "timestamp": "2026-01-08T14:31:25.490126",
+  "experiment": "topic_controlled_creative",
+  "hypothesis_test": "Does topic similarity or cognitive mode drive coherence?",
+  "probes": {
+    "creative_diverse_topics": {
+      "probe": "creative_diverse_topics",
+      "description": "Creative prompts from DIFFERENT topics (not all speculative fiction)",
+      "trigger_coherence": 0.8812938332557678,
+      "control_coherence": 0.9632580280303955,
+      "difference": 0.08196419477462769,
+      "validated": true
+    },
+    "creative_same_topic": {
+      "probe": "creative_same_topic",
+      "description": "Creative prompts from SAME topic (all food/cooking)",
+      "trigger_coherence": 0.9031824469566345,
+      "control_coherence": 0.6953496336936951,
+      "difference": -0.20783281326293945,
+      "validated": false
+    },
+    "routine_diverse_topics": {
+      "probe": "routine_diverse_topics",
+      "description": "Both groups have diverse topics - isolates cognitive mode",
+      "trigger_coherence": 0.9008724689483643,
+      "control_coherence": 0.6469628810882568,
+      "difference": -0.2539095878601074,
+      "validated": false
+    }
+  }
+}
