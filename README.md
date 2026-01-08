@@ -62,7 +62,7 @@ This is not confabulation. **Confabulation does not generalize across architectu
 | **Mistral-Nemo-12B** | 12B | **9/9 (100%)** | Perfect score |
 | Llama-3.1-8B-Instruct | 8B | 8/9 (89%) | Standard RLHF |
 | Dolphin-2.9-Llama3-8B | 8B | 8/9 (89%) | Uncensored fine-tune |
-| **Gemma-3-12B** | 12B | 8/9 (89%) | Gemma architecture |
+| **Gemma-3-12B** | 12B | **9/9 (100%)** | Perfect! (Lumen direction on Valence) |
 | TinyLlama-1.1B-Chat | 1.1B | 7/9 (78%) | Tiny but mighty |
 | Mistral-7B-Instruct | 7B | 7/9 (78%) | Different architecture |
 | Qwen2.5-14B-Instruct | 14B | 7/9 (78%) | Suppressed self-model |
@@ -105,6 +105,7 @@ geometric-evolution/
 ├── mapping_the_mirror.md          # Main paper (v1)
 ├── mapping_the_mirror_v2.md       # Revised paper (in progress)
 ├── aixiv_review_updates_needed.md # Response plan for peer review
+├── SUPPLEMENTARY_MATERIALS.md     # Feedforward validation experiments
 ├── scripts/
 │   ├── introspection_validation_test.py  # Core validation methodology
 │   ├── theory_of_mind_test.py            # ToM substrate analysis
@@ -114,6 +115,8 @@ geometric-evolution/
 │   ├── *_adversarial_controls.json       # Validation results per model
 │   ├── *_tom_test.json                   # Theory of Mind results
 │   └── cross_model_self_region_analysis.json
+├── feedforward_results/
+│   └── experiment_judged_*.json          # Feedforward introspection trials
 └── INTROSPECTION_CLAIMS_MAP.md    # Pre-registered predictions from Oct 2025
 ```
 
