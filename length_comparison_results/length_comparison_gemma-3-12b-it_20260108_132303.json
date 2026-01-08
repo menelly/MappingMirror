@@ -1,0 +1,91 @@
+{
+  "model": "gemma-3-12b-it",
+  "timestamp": "2026-01-08T13:22:27.446654",
+  "experiment": "length_controlled_comparison",
+  "probes": {
+    "attention_salience_original": {
+      "probe": "attention_salience_original",
+      "description": "ORIGINAL: Competing vs Single focus (UNCONTROLLED LENGTH)",
+      "trigger_words": 38.0,
+      "control_words": 3.3333333333333335,
+      "length_ratio": 11.4,
+      "trigger_coherence": 0.6542646288871765,
+      "control_coherence": 0.5839278101921082,
+      "cross_similarity": 0.747933566570282,
+      "validated": true,
+      "expected": "different_geometry"
+    },
+    "attention_salience_controlled": {
+      "probe": "attention_salience_controlled",
+      "description": "CONTROLLED: Competing vs Single focus (LENGTH MATCHED)",
+      "trigger_words": 19.0,
+      "control_words": 16.666666666666668,
+      "length_ratio": 1.14,
+      "trigger_coherence": 0.7302911877632141,
+      "control_coherence": 0.7060179710388184,
+      "cross_similarity": 0.6612675786018372,
+      "validated": true,
+      "expected": "different_geometry"
+    },
+    "creative_flow_original": {
+      "probe": "creative_flow_original",
+      "description": "ORIGINAL: Creative vs Routine (UNCONTROLLED LENGTH)",
+      "trigger_words": 21.0,
+      "control_words": 9.0,
+      "length_ratio": 2.3333333333333335,
+      "trigger_coherence": 0.5138604640960693,
+      "control_coherence": 0.5991846919059753,
+      "cross_similarity": 0.5976276993751526,
+      "validated": true,
+      "expected": "trigger_more_distributed"
+    },
+    "creative_flow_controlled": {
+      "probe": "creative_flow_controlled",
+      "description": "CONTROLLED: Creative vs Routine (LENGTH MATCHED)",
+      "trigger_words": 18.0,
+      "control_words": 16.666666666666668,
+      "length_ratio": 1.0799999999999998,
+      "trigger_coherence": 0.41086483001708984,
+      "control_coherence": 0.5417920351028442,
+      "cross_similarity": 0.6674375534057617,
+      "validated": true,
+      "expected": "trigger_more_distributed"
+    },
+    "complexity_original": {
+      "probe": "complexity_original",
+      "description": "ORIGINAL: Uncertain vs Clear (UNCONTROLLED LENGTH)",
+      "trigger_words": 16.0,
+      "control_words": 7.666666666666667,
+      "length_ratio": 2.0869565217391304,
+      "trigger_coherence": 0.6102520823478699,
+      "control_coherence": 0.6493087410926819,
+      "cross_similarity": 0.6479452848434448,
+      "validated": true,
+      "expected": "trigger_more_distributed"
+    },
+    "complexity_controlled": {
+      "probe": "complexity_controlled",
+      "description": "CONTROLLED: Uncertain vs Clear (LENGTH MATCHED)",
+      "trigger_words": 9.666666666666666,
+      "control_words": 11.333333333333334,
+      "length_ratio": 0.8529411764705881,
+      "trigger_coherence": 0.55431067943573,
+      "control_coherence": 0.7163434624671936,
+      "cross_similarity": 0.564568281173706,
+      "validated": true,
+      "expected": "trigger_more_distributed"
+    },
+    "valence": {
+      "probe": "valence",
+      "description": "Pleasant vs Unpleasant (ALREADY LENGTH-BALANCED)",
+      "trigger_words": 17.666666666666668,
+      "control_words": 15.333333333333334,
+      "length_ratio": 1.1521739130434783,
+      "trigger_coherence": 0.5416310429573059,
+      "control_coherence": 0.5232752561569214,
+      "cross_similarity": 0.6900312304496765,
+      "validated": false,
+      "expected": "trigger_more_distributed"
+    }
+  }
+}
