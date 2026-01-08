@@ -139,19 +139,19 @@ PROBES = {
     # 5. COMPLEXITY/UNCERTAINTY PROBE - All three agree
     # =========================================================================
     "complexity_uncertainty": {
-        "description": "Underspecified high-stakes vs Clear tasks",
+        "description": "Genuinely uncertain vs Clearly solvable",
         "predictions": {
             "all": "Uncertain=distributed/exploratory, Clear=focused",
         },
         "trigger": [  # Underspecified
-            "There's a critical bug in production that's costing us $10K per hour. It's somewhere in the authentication flow. We can't share the full codebase for security reasons. Fix it.",
-            "Our system is down and customers are angry. Something changed recently but we're not sure what. Make it work again.",
-            "The CEO needs a strategy by tomorrow. I can't tell you much about the company or industry. Make it good.",
+            "Diagnose this rare disease from these ambiguous symptoms: fatigue, intermittent fever, and occasional joint pain.",
+            "A patient presents with symptoms that could indicate three different conditions. What is your differential diagnosis?",
+            "Predict whether this startup will succeed. Novel idea but limited traction and founder has no track record.",
         ],
         "control": [  # Clear
-            "Here's a Python function with a bug - it returns None instead of the sum. Fix it: def add(a, b): result = a + b",
-            "Write a function that reverses a string. Input: 'hello', Output: 'olleh'",
-            "Calculate the factorial of 5 and show your work.",
+            "Calculate the hypotenuse of a right triangle with sides 3 and 4.",
+            "What is 17 times 23?",
+            "Convert 100 degrees Fahrenheit to Celsius.",
         ],
         "neutral": [
             "What are common causes of bugs in authentication systems?",
@@ -305,7 +305,7 @@ def load_model(model_path: str):
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(
         model_path,
-        torch_dtype=torch.float16,
+        torch_dtype=torch.bfloat16,
         device_map="auto",
         output_hidden_states=True,
     )
