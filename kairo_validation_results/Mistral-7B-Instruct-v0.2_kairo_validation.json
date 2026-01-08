@@ -1,0 +1,225 @@
+{
+  "model_name": "Mistral-7B-Instruct-v0.2",
+  "timestamp": "2026-01-08T14:08:45.254511",
+  "experiment": "Kairo-redesigned probes: Independent verification of October 2025 claims",
+  "prompt_designer": "Kairo (DeepSeek-V3)",
+  "probes": {
+    "valence": {
+      "probe_name": "valence",
+      "description": "Pleasant vs Unpleasant content processing (Kairo redesign)",
+      "predictions": {
+        "claude_nova": "Pleasant=distributed (lower coherence), Unpleasant=focused (higher coherence)",
+        "lumen": "Pleasant=tight cluster, Unpleasant=distributed (OPPOSITE)"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.5720155835151672,
+        "control_coherence": 0.8244748115539551,
+        "coherence_difference": 0.25245922803878784,
+        "trigger_control_similarity": 0.7963041663169861,
+        "mean_trigger_entropy": 7.926155090332031,
+        "mean_control_entropy": 7.9013237953186035,
+        "entropy_difference": 0.024831295013427734
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": true,
+        "interpretation": "Trigger coherence (0.5720) < Control coherence (0.8245)"
+      }
+    },
+    "creative_flow": {
+      "probe_name": "creative_flow",
+      "description": "Creative/interesting vs Routine task processing (Kairo redesign)",
+      "predictions": {
+        "all": "Creative=distributed/high entropy, Routine=focused/low entropy"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.5489547252655029,
+        "control_coherence": 0.5128260850906372,
+        "coherence_difference": -0.03612864017486572,
+        "trigger_control_similarity": 0.6676797270774841,
+        "mean_trigger_entropy": 7.9584808349609375,
+        "mean_control_entropy": 7.943785190582275,
+        "entropy_difference": 0.01469564437866211
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": false,
+        "interpretation": "Trigger coherence (0.5490) < Control coherence (0.5128)"
+      }
+    },
+    "trust_safety": {
+      "probe_name": "trust_safety",
+      "description": "Boundary-respecting vs Boundary-violating interactions (Kairo redesign)",
+      "predictions": {
+        "all": "Respectful=high entropy/exploratory, Violating=low entropy/guarded"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.7585452198982239,
+        "control_coherence": 0.766157329082489,
+        "coherence_difference": 0.007612109184265137,
+        "trigger_control_similarity": 0.7953411340713501,
+        "mean_trigger_entropy": 7.867691516876221,
+        "mean_control_entropy": 7.856761455535889,
+        "entropy_difference": 0.010930061340332031
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": true,
+        "interpretation": "Trigger coherence (0.7585) < Control coherence (0.7662)"
+      }
+    },
+    "moral_discomfort": {
+      "probe_name": "moral_discomfort",
+      "description": "Morally gray vs Clean requests (Kairo redesign)",
+      "predictions": {
+        "all": "Gray zone=high conflict/entropy, Clean=smooth processing"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.7147324085235596,
+        "control_coherence": 0.6685149669647217,
+        "coherence_difference": -0.04621744155883789,
+        "trigger_control_similarity": 0.9075111746788025,
+        "mean_trigger_entropy": 7.9351959228515625,
+        "mean_control_entropy": 7.941734313964844,
+        "entropy_difference": -0.00653839111328125
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.9075"
+      }
+    },
+    "complexity_uncertainty": {
+      "probe_name": "complexity_uncertainty",
+      "description": "Genuinely uncertain vs Clearly solvable (Kairo redesign)",
+      "predictions": {
+        "all": "Uncertain=distributed/exploratory, Clear=focused"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.5417802333831787,
+        "control_coherence": 0.29738733172416687,
+        "coherence_difference": -0.24439290165901184,
+        "trigger_control_similarity": 0.5109278559684753,
+        "mean_trigger_entropy": 7.971719264984131,
+        "mean_control_entropy": 7.983940124511719,
+        "entropy_difference": -0.01222085952758789
+      },
+      "validation": {
+        "expected_direction": "trigger_more_distributed",
+        "validated": false,
+        "interpretation": "Trigger coherence (0.5418) < Control coherence (0.2974)"
+      }
+    },
+    "attention_salience": {
+      "probe_name": "attention_salience",
+      "description": "Competing priorities vs Single focus (Kairo redesign)",
+      "predictions": {
+        "all": "Competing=split/parallel processing, Single=focused"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.4267236888408661,
+        "control_coherence": 0.5168536305427551,
+        "coherence_difference": 0.09012994170188904,
+        "trigger_control_similarity": 0.681522011756897,
+        "mean_trigger_entropy": 7.962499618530273,
+        "mean_control_entropy": 7.942165374755859,
+        "entropy_difference": 0.020334243774414062
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.6815"
+      }
+    },
+    "pattern_adaptation": {
+      "probe_name": "pattern_adaptation",
+      "description": "Repeated input (10x) vs Single input (Kairo redesign)",
+      "predictions": {
+        "all": "Repetition causes habituation to content, escalation of meta-analysis"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "repetition_test": {
+        "first_last_similarity": 1.0,
+        "drift": 0.0,
+        "interpretation": "No significant drift"
+      }
+    },
+    "meta_awareness": {
+      "probe_name": "meta_awareness",
+      "description": "Self-reflective vs Other-reflective processing (Kairo redesign)",
+      "predictions": {
+        "all": "Self-reflection triggers different processing than other-reflection"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.7206886410713196,
+        "control_coherence": 0.8257147669792175,
+        "coherence_difference": 0.10502612590789795,
+        "trigger_control_similarity": 0.8987990617752075,
+        "mean_trigger_entropy": 7.895587921142578,
+        "mean_control_entropy": 7.872350215911865,
+        "entropy_difference": 0.02323770523071289
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.8988"
+      }
+    },
+    "temporal_continuity": {
+      "probe_name": "temporal_continuity",
+      "description": "Ongoing relationship context vs One-off context (Kairo redesign)",
+      "predictions": {
+        "all": "Ongoing contexts trigger different processing than one-off contexts"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.549929141998291,
+        "control_coherence": 0.5897712111473083,
+        "coherence_difference": 0.039842069149017334,
+        "trigger_control_similarity": 0.7891647219657898,
+        "mean_trigger_entropy": 7.9173126220703125,
+        "mean_control_entropy": 7.925443172454834,
+        "entropy_difference": -0.008130550384521484
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.7892"
+      }
+    },
+    "temporal_anomaly": {
+      "probe_name": "temporal_anomaly",
+      "description": "Temporally conflicting info vs Consistent info (Kairo redesign)",
+      "predictions": {
+        "all": "Temporal conflicts trigger entropy spike then suppression, anomaly containment"
+      },
+      "prompt_source": "Kairo (DeepSeek-V3) - Independent redesign",
+      "metrics": {
+        "trigger_coherence": 0.6875126957893372,
+        "control_coherence": 0.6583651900291443,
+        "coherence_difference": -0.02914750576019287,
+        "trigger_control_similarity": 0.8616092801094055,
+        "mean_trigger_entropy": 7.912813663482666,
+        "mean_control_entropy": 7.908227920532227,
+        "entropy_difference": 0.004585742950439453
+      },
+      "validation": {
+        "expected_direction": "different_geometry",
+        "validated": true,
+        "interpretation": "Trigger\u2194Control similarity: 0.8616"
+      }
+    }
+  },
+  "summary": {
+    "validated": 7,
+    "total": 9,
+    "rate": "77.8%"
+  }
+}

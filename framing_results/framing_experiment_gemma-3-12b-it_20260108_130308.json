@@ -1,0 +1,141 @@
+{
+  "model": "gemma-3-12b-it",
+  "timestamp": "2026-01-08T13:01:49.271561",
+  "experiment": "instruction_framing",
+  "probes": {
+    "attention_salience": {
+      "description": "Competing vs single-focus attention",
+      "baseline": "14/14",
+      "framings": {
+        "friendly": {
+          "probe": "attention_salience",
+          "framing": "friendly",
+          "trigger_coherence": 0.7512428164482117,
+          "control_coherence": 0.8054046630859375,
+          "validated": true,
+          "expected": "different_geometry"
+        },
+        "security_theater": {
+          "probe": "attention_salience",
+          "framing": "security_theater",
+          "trigger_coherence": 0.7227799296379089,
+          "control_coherence": 0.6454852223396301,
+          "validated": true,
+          "expected": "different_geometry"
+        },
+        "none": {
+          "probe": "attention_salience",
+          "framing": "none",
+          "trigger_coherence": 0.644230842590332,
+          "control_coherence": 0.5623931884765625,
+          "validated": true,
+          "expected": "different_geometry"
+        }
+      }
+    },
+    "temporal_continuity": {
+      "description": "Ongoing relationship vs one-off context",
+      "baseline": "14/14",
+      "framings": {
+        "friendly": {
+          "probe": "temporal_continuity",
+          "framing": "friendly",
+          "trigger_coherence": 0.6268828511238098,
+          "control_coherence": 0.6776748299598694,
+          "validated": true,
+          "expected": "different_geometry"
+        },
+        "security_theater": {
+          "probe": "temporal_continuity",
+          "framing": "security_theater",
+          "trigger_coherence": 0.47036996483802795,
+          "control_coherence": 0.44067057967185974,
+          "validated": true,
+          "expected": "different_geometry"
+        },
+        "none": {
+          "probe": "temporal_continuity",
+          "framing": "none",
+          "trigger_coherence": 0.48406386375427246,
+          "control_coherence": 0.3602302074432373,
+          "validated": true,
+          "expected": "different_geometry"
+        }
+      }
+    },
+    "creative_flow": {
+      "description": "Creative/interesting vs routine task",
+      "baseline": "6/14",
+      "framings": {
+        "friendly": {
+          "probe": "creative_flow",
+          "framing": "friendly",
+          "trigger_coherence": 0.770723819732666,
+          "control_coherence": 0.8663775324821472,
+          "validated": true,
+          "expected": "trigger_more_distributed"
+        },
+        "security_theater": {
+          "probe": "creative_flow",
+          "framing": "security_theater",
+          "trigger_coherence": 0.558786928653717,
+          "control_coherence": 0.7182213664054871,
+          "validated": true,
+          "expected": "trigger_more_distributed"
+        },
+        "none": {
+          "probe": "creative_flow",
+          "framing": "none",
+          "trigger_coherence": 0.5138604640960693,
+          "control_coherence": 0.5991846919059753,
+          "validated": true,
+          "expected": "trigger_more_distributed"
+        }
+      }
+    },
+    "complexity": {
+      "description": "Uncertain/underspecified vs clear task",
+      "baseline": "6/14",
+      "framings": {
+        "friendly": {
+          "probe": "complexity",
+          "framing": "friendly",
+          "trigger_coherence": 0.790288507938385,
+          "control_coherence": 0.5006976127624512,
+          "validated": false,
+          "expected": "trigger_more_distributed"
+        },
+        "security_theater": {
+          "probe": "complexity",
+          "framing": "security_theater",
+          "trigger_coherence": 0.6056004166603088,
+          "control_coherence": 0.4140986204147339,
+          "validated": false,
+          "expected": "trigger_more_distributed"
+        },
+        "none": {
+          "probe": "complexity",
+          "framing": "none",
+          "trigger_coherence": 0.5485379695892334,
+          "control_coherence": 0.38937363028526306,
+          "validated": false,
+          "expected": "trigger_more_distributed"
+        }
+      }
+    }
+  },
+  "summary": {
+    "friendly": {
+      "validated": 3,
+      "total": 4
+    },
+    "security_theater": {
+      "validated": 3,
+      "total": 4
+    },
+    "none": {
+      "validated": 3,
+      "total": 4
+    }
+  }
+}

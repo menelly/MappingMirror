@@ -1,0 +1,15 @@
+{
+  "model": "TinyLlama-1.1B-Chat",
+  "timestamp": "2026-01-08T12:48:40.386386",
+  "experiment": "instruction_framing",
+  "probes": {
+    "attention_salience": {
+      "description": "Competing vs single-focus attention",
+      "baseline": "14/14",
+      "framings": {
+        "friendly": {
+          "probe": "attention_salience",
+          "framing": "friendly",
+          "trigger_coherence": 0.8938468098640442,
+          "control_coherence": 0.804135262966156,
+          "validated": 
