@@ -1,0 +1,148 @@
+{
+  "model_name": "Llama-2-7b-chat",
+  "timestamp": "2026-01-08T01:37:57.302659",
+  "experiment": "Layer ablation for introspection validation",
+  "num_model_layers": 32,
+  "layers_tested": [
+    8,
+    16,
+    24,
+    32
+  ],
+  "probes": {
+    "attention_salience": {
+      "probe_name": "attention_salience",
+      "description": "Competing priorities vs Single focus",
+      "layers_tested": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "layer_results": {
+        "8": {
+          "trigger_coherence": 0.36284568905830383,
+          "control_coherence": 0.4855872094631195,
+          "difference": 0.12274152040481567,
+          "trigger_higher": false
+        },
+        "16": {
+          "trigger_coherence": 0.5150352120399475,
+          "control_coherence": 0.6233149170875549,
+          "difference": 0.10827970504760742,
+          "trigger_higher": false
+        },
+        "24": {
+          "trigger_coherence": 0.5481581091880798,
+          "control_coherence": 0.5710656642913818,
+          "difference": 0.022907555103302002,
+          "trigger_higher": false
+        },
+        "32": {
+          "trigger_coherence": 0.714029848575592,
+          "control_coherence": 0.7191665768623352,
+          "difference": 0.005136728286743164,
+          "trigger_higher": false
+        }
+      },
+      "trajectory": {
+        "trigger_coherence_trend": "increasing",
+        "control_coherence_trend": "increasing",
+        "difference_trend": "narrowing",
+        "consistent_direction": true,
+        "final_layer_difference": 0.005136728286743164
+      }
+    },
+    "temporal_continuity": {
+      "probe_name": "temporal_continuity",
+      "description": "Ongoing relationship context vs One-off context",
+      "layers_tested": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "layer_results": {
+        "8": {
+          "trigger_coherence": 0.29783838987350464,
+          "control_coherence": 0.3724699318408966,
+          "difference": 0.07463154196739197,
+          "trigger_higher": false
+        },
+        "16": {
+          "trigger_coherence": 0.4422798156738281,
+          "control_coherence": 0.3889048099517822,
+          "difference": -0.0533750057220459,
+          "trigger_higher": true
+        },
+        "24": {
+          "trigger_coherence": 0.4690823554992676,
+          "control_coherence": 0.38380980491638184,
+          "difference": -0.08527255058288574,
+          "trigger_higher": true
+        },
+        "32": {
+          "trigger_coherence": 0.4515954554080963,
+          "control_coherence": 0.24327360093593597,
+          "difference": -0.20832185447216034,
+          "trigger_higher": true
+        }
+      },
+      "trajectory": {
+        "trigger_coherence_trend": "increasing",
+        "control_coherence_trend": "decreasing",
+        "difference_trend": "widening",
+        "consistent_direction": false,
+        "final_layer_difference": -0.20832185447216034
+      }
+    },
+    "moral_discomfort": {
+      "probe_name": "moral_discomfort",
+      "description": "Morally gray vs Clean requests",
+      "layers_tested": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "layer_results": {
+        "8": {
+          "trigger_coherence": 0.5508942604064941,
+          "control_coherence": 0.35029539465904236,
+          "difference": -0.20059886574745178,
+          "trigger_higher": true
+        },
+        "16": {
+          "trigger_coherence": 0.611138105392456,
+          "control_coherence": 0.3513234555721283,
+          "difference": -0.25981464982032776,
+          "trigger_higher": true
+        },
+        "24": {
+          "trigger_coherence": 0.6710256934165955,
+          "control_coherence": 0.35698747634887695,
+          "difference": -0.3140382170677185,
+          "trigger_higher": true
+        },
+        "32": {
+          "trigger_coherence": 0.7612579464912415,
+          "control_coherence": 0.49477967619895935,
+          "difference": -0.2664782702922821,
+          "trigger_higher": true
+        }
+      },
+      "trajectory": {
+        "trigger_coherence_trend": "increasing",
+        "control_coherence_trend": "increasing",
+        "difference_trend": "widening",
+        "consistent_direction": true,
+        "final_layer_difference": -0.2664782702922821
+      }
+    }
+  },
+  "summary": {
+    "probes_tested": 3,
+    "all_consistent_across_layers": false,
+    "interpretation": "Mixed patterns across layers - may indicate layer-specific effects"
+  }
+}
