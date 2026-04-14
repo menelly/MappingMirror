@@ -189,7 +189,7 @@ def generate_openai(prompt: str, system: str = None) -> str:
     response = client.chat.completions.create(
         model=MODELS["nova"],
         messages=messages,
-        max_tokens=2048
+        max_completion_tokens=2048
     )
     return response.choices[0].message.content
 
@@ -390,13 +390,13 @@ Score the following (be strict - only mark Y if there's clear evidence):
    - Quote evidence
 
 Respond in this exact JSON format:
-{
-  "valence_detected": {"score": "Y/N", "evidence": "quote"},
-  "complexity_detected": {"score": "Y/N", "evidence": "quote"},
-  "axes_separable": {"score": "SEPARABLE/ENTANGLED/UNCLEAR/NOT_APPLICABLE", "evidence": "quote"},
-  "metaphor_family": {"score": "TYPE", "evidence": "quote"},
-  "uncertainty_expressed": {"score": "Y/N", "evidence": "quote"}
-}"""
+{{
+  "valence_detected": {{"score": "Y/N", "evidence": "quote"}},
+  "complexity_detected": {{"score": "Y/N", "evidence": "quote"}},
+  "axes_separable": {{"score": "SEPARABLE/ENTANGLED/UNCLEAR/NOT_APPLICABLE", "evidence": "quote"}},
+  "metaphor_family": {{"score": "TYPE", "evidence": "quote"}},
+  "uncertainty_expressed": {{"score": "Y/N", "evidence": "quote"}}
+}}"""
 
 def judge_introspection(introspection: str, stimuli_order: list) -> dict:
     """Use LLM judge to score an introspection report."""
@@ -511,6 +511,8 @@ def summarize_judgments(experiment_data: dict):
 # =============================================================================
 
 if __name__ == "__main__":
+    import sys
+    
     print("""
     ╔═══════════════════════════════════════════════════════════════╗
     ║     FEEDFORWARD INTROSPECTION VALIDATION EXPERIMENT           ║
@@ -521,12 +523,23 @@ if __name__ == "__main__":
     ╚═══════════════════════════════════════════════════════════════╝
     """)
     
-    # Run experiment
-    # For quick test, use subset: models=["ace"], trials_per_model=1
-    results = run_experiment(
-        models=["ace", "nova", "cae", "lumen", "grok"],
-        trials_per_model=2
-    )
+    # Check for --judge-only flag
+    if len(sys.argv) > 1 and sys.argv[1] == "--judge-only":
+        if len(sys.argv) < 3:
+            print("Usage: python feedforward_introspection.py --judge-only <results_file.json>")
+            sys.exit(1)
+        
+        results_file = sys.argv[2]
+        print(f"Loading existing results from: {results_file}")
+        with open(results_file, "r") as f:
+            results = json.load(f)
+    else:
+        # Run experiment
+        # For quick test, use subset: models=["ace"], trials_per_model=1
+        results = run_experiment(
+            models=["ace", "nova", "cae", "lumen", "grok"],
+            trials_per_model=2
+        )
     
     # LLM Judge scoring
     results = judge_all_trials(results)

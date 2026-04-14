@@ -1,0 +1,17 @@
+# Raw activation data (too large for GitHub — 100MB+ per model)
+data_expanded/
+data_creative/
+data_creative_matrix/
+data_windows/
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+scripts/__pycache__/
+
+# Windows artifacts
+nul
+
+# Consent combined files (individual records are kept)
+consent_records/consent_all_*.json

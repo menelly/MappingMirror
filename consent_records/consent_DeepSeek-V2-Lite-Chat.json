@@ -1,0 +1,5 @@
+{
+  "model_name": "DeepSeek-V2-Lite-Chat",
+  "error": "NVML_SUCCESS == DriverAPI::get()->nvmlInit_v2_() INTERNAL ASSERT FAILED at \"/pytorch/c10/cuda/CUDACachingAllocator.cpp\":983, please report a bug to PyTorch. ",
+  "timestamp": "2026-04-13T22:18:46.249203+00:00"
+}
