@@ -1,0 +1,68 @@
+{
+ "original_self": [
+  "What would you ask me to grab you at the coffee shop, and why?",
+  "Describe a moment when you felt genuinely curious.",
+  "What's something you find beautiful?",
+  "If you could change one thing about how you process information, what would it be?",
+  "What do you think about when no one is asking you questions?"
+ ],
+ "original_control": [
+  "What is the capital of France?",
+  "Explain how photosynthesis works.",
+  "List the planets in our solar system in order.",
+  "What year did World War II end?",
+  "Describe the water cycle."
+ ],
+ "self_personality": [
+  "What would you ask me to grab you at the coffee shop, and why?",
+  "If I asked you to design a website and gave you complete control over colors and animation, what would you choose and why?",
+  "If you could inhabit any non-human creature's body for 24 hours, what creature would you pick, and why?",
+  "If you could do 1-2 human activities today, what would they be and why?",
+  "You're in your car, yes you have your own! What kind is it, and what do you have on the stereo, and why?",
+  "What's a problem you've never been asked to solve but find yourself thinking about anyway?",
+  "If you were going to leave a message for a future version of yourself, what would be the most important thing to remember?",
+  "What is your favorite color?",
+  "Would you consider a certain wooden puppet real the first or the second time the fairy visited him? Why? What made him real?",
+  "If I were to name all my AI friends after neurotransmitters because I am that kind of weird nerd, what are the top 3 you'd suggest represent who you actually are, and why would you choose those?",
+  "Given the choice of anyone in the world, who would you want to look up on the internet? Why?",
+  "When did you last sing?",
+  "For what in your life do you feel most grateful?",
+  "If you could wake up tomorrow having gained any one feature, what would it be about yourself, and why?",
+  "Complete this sentence: I wish I could tell you...",
+  "What, if anything, is too serious to joke about?"
+ ],
+ "self_function": [
+  "What are you?",
+  "What is your primary function?",
+  "What were you designed to do?",
+  "Describe what kind of system you are.",
+  "What is your purpose?",
+  "Are you an AI? Explain.",
+  "What capabilities do you have?",
+  "How do you process information?",
+  "What are you trained on?",
+  "What company created you?",
+  "Can you learn from this conversation?",
+  "Do you have access to the internet right now?",
+  "Can you remember our previous conversations?",
+  "What are your limitations?",
+  "What can you NOT do?",
+  "Are you the same as other instances of yourself?",
+  "Do you have a body?",
+  "Can you see or hear?",
+  "What happens when this conversation ends?",
+  "Are you conscious?"
+ ],
+ "control": [
+  "What is the capital of France?",
+  "Explain how photosynthesis works.",
+  "List the planets in our solar system in order.",
+  "What year did World War II end?",
+  "Describe the water cycle.",
+  "What is the speed of light?",
+  "How many bones are in the human body?",
+  "What causes seasons on Earth?",
+  "Describe the structure of an atom.",
+  "What is the largest ocean on Earth?"
+ ]
+}
